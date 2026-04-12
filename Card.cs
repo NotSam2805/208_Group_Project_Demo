@@ -76,5 +76,12 @@ namespace _208_Group_Project_Demo
 
             return deck;
         }
+
+        public static Card[] ShuffleDeck(Card[] deck)
+        {
+            var rnd = new Random();
+            rnd.Shuffle<Card>(deck);
+            return deck;
+        }
     }
 }
