@@ -13,8 +13,8 @@ void PrintDeck(Card[] deck) {
     }
 }
 
+var game = new Blackjack();
 
-var deck = Card.GetDeck();
-PrintDeck(deck);
+game.PlayBlackjack();
 
 Console.ReadLine();
