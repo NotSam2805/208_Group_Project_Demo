@@ -30,7 +30,8 @@ namespace _208_Group_Project_Demo
     public enum BlackjackAction
     {
         Hit,
-        Stand
+        Stand,
+        DoubleDown
     }
 
     /// <summary>
@@ -39,11 +40,16 @@ namespace _208_Group_Project_Demo
     public class Blackjack
     {
         private const int MIN_SHOE = 35;
+        private const int INITIAL_CREDIT = 5000;
 
         private Stack<Card> cardShoe;
 
         public List<Card> playerHand { get; private set; }
         public int playerValue { get; private set; }
+
+        //Values used for handling bets and player's credit
+        public double? playerBet { get; private set; }
+        public double playerCredit { get; private set; }
 
         private List<Card> dealerHand;
         private int dealerValue;
@@ -55,6 +61,9 @@ namespace _208_Group_Project_Demo
             cardShoe = new Stack<Card>();
             playerHand = new List<Card>();
             dealerHand = new List<Card>();
+
+            playerCredit = INITIAL_CREDIT;
+            playerBet = null;
 
             currentState = BlackjackState.NoGame;
         }
@@ -100,7 +109,7 @@ namespace _208_Group_Project_Demo
 
         /// <summary>
         /// Plays a complete game of blackjack between the player and the dealer, handling all game logic and user
-        /// interaction.
+        /// interaction. Use of this function is not recommended, use StartBlackjack to start a game.
         /// </summary>
         /// <returns>A BlackjackResult indicating the outcome of the game.</returns>
         public BlackjackResult PlayBlackjack()
@@ -225,6 +234,31 @@ namespace _208_Group_Project_Demo
             return BlackjackResult.PlayerWins;
         }
 
+        public void PlaceBet(double bet)
+        {
+            if (currentState != BlackjackState.NoGame)
+            {
+                throw new Exception("Cannot place a bet during play");
+            }
+
+            if (bet <= 0)
+            {
+                throw new Exception("Cannot place bet of 0 or less");
+            }
+
+            playerCredit -= bet;
+            playerBet = bet;
+        }
+
+        public void ShowPlayerCredit()
+        {
+            FrontEnd.Output($"Credit: {playerCredit}");
+            if (playerBet != null)
+            {
+                FrontEnd.Output($"Current bet: {playerBet}");
+            }
+        }
+
         /// <summary>
         /// Initializes and starts a new game of blackjack, dealing cards to the player and dealer and updating the game
         /// state.
@@ -269,6 +303,11 @@ namespace _208_Group_Project_Demo
             currentState = BlackjackState.PlayerTurn;
         }
 
+        public bool CanDoubleDown()
+        {
+            return (currentState == BlackjackState.PlayerTurn) && (playerHand.Count == 2) && (playerBet != null);
+        }
+
         /// <summary>
         /// Processes the player's action during their turn in a game of Blackjack.
         /// </summary>
@@ -282,22 +321,39 @@ namespace _208_Group_Project_Demo
                 return;
             }
 
-            if (playerAction == BlackjackAction.Hit)
+            if (playerAction == BlackjackAction.DoubleDown)
             {
-                playerHand = DealCards(playerHand);
-                playerValue = HandValue(playerHand);
-                FrontEnd.Output($"Player hand: {HandToString(playerHand)} ({playerValue})");
-
-                if (playerValue > 21)
+                if (playerBet == null)
                 {
-                    currentState = BlackjackState.GameEnd;
+                    throw new Exception("Cannot double down when no bet was placed");
                 }
-                else if (playerValue == 21)
+
+                if (playerHand.Count > 2)
+                {
+                    throw new Exception("Can only double down on first turn");
+                }
+
+                if (!CanDoubleDown())
+                {
+                    throw new Exception("Cannot double down for unknown reason");
+                }
+
+                //Double the bet
+                playerCredit -= (double)playerBet;
+                playerBet += playerBet;
+
+                //Committed to one hit then stand
+                PlayerHit();
+                //If PlayerHit didn't change the state, need to ensure the player has no more turns
+                if (currentState == BlackjackState.PlayerTurn)
                 {
                     currentState = BlackjackState.DealerTurn;
                 }
+            }
 
-                return;
+            if (playerAction == BlackjackAction.Hit)
+            {
+                PlayerHit();
             }
 
             if (playerAction == BlackjackAction.Stand)
@@ -305,6 +361,27 @@ namespace _208_Group_Project_Demo
                 currentState = BlackjackState.DealerTurn;
                 return;
             }
+        }
+
+        /// <summary>
+        /// Deals a card to the player, updates the player's hand value, displays the hand, and transitions the game
+        /// state based on the new hand value.
+        /// </summary>
+        private void PlayerHit()
+        {
+            playerHand = DealCards(playerHand);
+            playerValue = HandValue(playerHand);
+            FrontEnd.Output($"Player hand: {HandToString(playerHand)} ({playerValue})");
+
+            if (playerValue > 21)
+            {
+                currentState = BlackjackState.GameEnd;
+            }
+            else if (playerValue == 21)
+            {
+                currentState = BlackjackState.DealerTurn;
+            }
+
         }
 
         /// <summary>
@@ -361,32 +438,62 @@ namespace _208_Group_Project_Demo
             if (playerValue > 21)
             {
                 FrontEnd.Output("Player bust");
+
+                playerBet = null;
+
                 return BlackjackResult.PlayerBust;
             }
             if (dealerValue > 21)
             {
                 FrontEnd.Output("Dealer bust");
+
+                if (playerBet != null)
+                {
+                    playerCredit += 2d * (double)playerBet;
+                    playerBet = null;
+                }
+
                 return BlackjackResult.DealerBust;
             }
 
-            if (playerHand.Count == 2 && dealerHand.Count == 2)
+            if (playerHand.Count == 2 || dealerHand.Count == 2)
             {
-                bool playerNatural = playerValue == 21;
-                bool dealerNatural = dealerValue == 21;
+                bool playerNatural = (playerValue == 21) && (playerHand.Count == 2);
+                bool dealerNatural = (dealerValue == 21) && (playerHand.Count == 2);
 
                 if (playerNatural && dealerNatural)
                 {
                     FrontEnd.Output("Both have blackjack");
+
+                    if (playerBet != null)
+                    {
+                        playerCredit += (double)playerBet;
+                        playerBet = null;
+                    }
+
                     return BlackjackResult.BothNatural;
                 }
                 else if (playerNatural)
                 {
                     FrontEnd.Output("Player Blackjack");
+
+                    if (playerBet != null)
+                    {
+                        playerCredit += 2.5 * (double)playerBet;
+                        playerBet = null;
+                    }
+
                     return BlackjackResult.PlayerNatural;
                 }
                 else if (dealerNatural)
                 {
                     FrontEnd.Output("Dealer Blackjack");
+
+                    if (playerBet != null)
+                    {
+                        playerBet = null;
+                    }
+
                     return BlackjackResult.DealerNatural;
                 }
             }
@@ -394,15 +501,31 @@ namespace _208_Group_Project_Demo
             if (dealerValue == playerValue)
             {
                 FrontEnd.Output("Stand off");
+                
+                //Keep playing with the same bet
+
                 return BlackjackResult.StandOff;
             }
             if (dealerValue > playerValue)
             {
                 FrontEnd.Output("Dealer wins");
+
+                if (playerBet != null)
+                {
+                    playerBet = null;
+                }
+
                 return BlackjackResult.DealerWins;
             }
 
             FrontEnd.Output("Player wins");
+
+            if (playerBet != null)
+            {
+                playerCredit += 2d * (double)playerBet;
+                playerBet = null;
+            }
+
             return BlackjackResult.PlayerWins;
         }
 
@@ -421,6 +544,8 @@ namespace _208_Group_Project_Demo
         {
             return cardShoe.Count;
         }
+
+
 
 
         /// <summary>

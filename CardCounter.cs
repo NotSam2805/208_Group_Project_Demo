@@ -87,8 +87,8 @@ namespace _208_Group_Project_Demo
         /// <returns>The current true count as an integer.</returns>
         public double GetTrueCount()
         {
-            int nDecksLeft = game.ShoeCount() / 52;
-            trueCount = (double)runningCount / (double)nDecksLeft;
+            double nDecksLeft = game.ShoeCount() / 52d;
+            trueCount = runningCount / nDecksLeft;
             return trueCount;
         }
 
