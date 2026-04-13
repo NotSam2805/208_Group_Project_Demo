@@ -253,7 +253,7 @@ namespace _208_Group_Project_Demo
             dealerValue = HandValue(dealerHand);
             playerValue = HandValue(playerHand);
 
-            var tempHand = dealerHand;
+            var tempHand = new List<Card>(dealerHand);
             tempHand.Remove(tempHand[0]);
             FrontEnd.Output($"Dealer hand: X, {dealerHand[1].id} ({HandValue(tempHand)})");
             FrontEnd.Output($"Player hand: {HandToString(playerHand)} ({playerValue})");
