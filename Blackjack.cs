@@ -45,7 +45,7 @@ namespace _208_Group_Project_Demo
         public List<Card> playerHand { get; private set; }
         public int playerValue { get; private set; }
 
-        public List<Card> dealerHand { get; private set; }
+        private List<Card> dealerHand;
         private int dealerValue;
         
         public BlackjackState currentState { get; private set; }
@@ -121,7 +121,9 @@ namespace _208_Group_Project_Demo
             dealerValue = HandValue(dealerHand);
             playerValue = HandValue(playerHand);
 
-            FrontEnd.Output($"Dealer hand: X, {dealerHand[1].id} ({dealerValue})");
+            var tempHand = dealerHand;
+            tempHand.Remove(tempHand[0]);
+            FrontEnd.Output($"Dealer hand: X, {dealerHand[1].id} ({HandValue(tempHand)})");
             FrontEnd.Output($"Player hand: {HandToString(playerHand)} ({playerValue})");
 
             FrontEnd.Output("");
@@ -251,7 +253,9 @@ namespace _208_Group_Project_Demo
             dealerValue = HandValue(dealerHand);
             playerValue = HandValue(playerHand);
 
-            FrontEnd.Output($"Dealer hand: X, {dealerHand[1].id} ({dealerValue})");
+            var tempHand = dealerHand;
+            tempHand.Remove(tempHand[0]);
+            FrontEnd.Output($"Dealer hand: X, {dealerHand[1].id} ({HandValue(tempHand)})");
             FrontEnd.Output($"Player hand: {HandToString(playerHand)} ({playerValue})");
 
             FrontEnd.Output("");
@@ -271,6 +275,7 @@ namespace _208_Group_Project_Demo
         /// <param name="playerAction">The action chosen by the player, such as Hit or Stand.</param>
         public void PlayerTurn(BlackjackAction playerAction)
         {
+            FrontEnd.Output("");
             if (currentState != BlackjackState.PlayerTurn)
             {
                 FrontEnd.Output("It is not the player's turn");
@@ -308,6 +313,7 @@ namespace _208_Group_Project_Demo
         /// </summary>
         public void DealerTurn()
         {
+            FrontEnd.Output("");
             if (currentState != BlackjackState.DealerTurn)
             {
                 FrontEnd.Output("Not the dealer's turn");
@@ -341,12 +347,13 @@ namespace _208_Group_Project_Demo
         /// <returns>A BlackjackResult value indicating the outcome of the game.</returns>
         public BlackjackResult EndGame()
         {
+            FrontEnd.Output("");
             if (currentState != BlackjackState.GameEnd)
             {
                 throw (new Exception("Cannot end game yet"));
             }
 
-            FrontEnd.Output($"Dealer hand: X, {dealerHand[1].id} ({dealerValue})");
+            FrontEnd.Output($"Dealer hand: X, {HandToString(dealerHand)} ({dealerValue})");
             FrontEnd.Output($"Player hand: {HandToString(playerHand)} ({playerValue})");
 
             currentState = BlackjackState.NoGame;
@@ -398,6 +405,23 @@ namespace _208_Group_Project_Demo
             FrontEnd.Output("Player wins");
             return BlackjackResult.PlayerWins;
         }
+
+        public List<Card> LookAtDealerHand()
+        {
+            if (currentState == BlackjackState.PlayerTurn)
+            {
+                var temp = dealerHand;
+                temp.Remove(temp[0]);
+                return temp;
+            }
+            return dealerHand;
+        }
+
+        public int ShoeCount()
+        {
+            return cardShoe.Count;
+        }
+
 
         /// <summary>
         /// Calculates the total value of a hand of cards, treating aces as 1 or 11 to maximize the hand's value without
