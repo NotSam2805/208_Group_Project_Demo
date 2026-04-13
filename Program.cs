@@ -15,6 +15,4 @@ void PrintDeck(Card[] deck) {
 
 var game = new Blackjack();
 
-game.PlayBlackjack();
-
 Console.ReadLine();
