@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: _208_Group_Project_Demo.BlackjackAction
+  commentId: T:_208_Group_Project_Demo.BlackjackAction
+  id: BlackjackAction
+  parent: _208_Group_Project_Demo
+  children:
+  - _208_Group_Project_Demo.BlackjackAction.Hit
+  - _208_Group_Project_Demo.BlackjackAction.Stand
+  langs:
+  - csharp
+  - vb
+  name: BlackjackAction
+  nameWithType: BlackjackAction
+  fullName: _208_Group_Project_Demo.BlackjackAction
+  type: Enum
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: BlackjackAction
+    path: Blackjack.cs
+    startLine: 29
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public enum BlackjackAction
+    content.vb: Public Enum BlackjackAction
+- uid: _208_Group_Project_Demo.BlackjackAction.Hit
+  commentId: F:_208_Group_Project_Demo.BlackjackAction.Hit
+  id: Hit
+  parent: _208_Group_Project_Demo.BlackjackAction
+  langs:
+  - csharp
+  - vb
+  name: Hit
+  nameWithType: BlackjackAction.Hit
+  fullName: _208_Group_Project_Demo.BlackjackAction.Hit
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Hit
+    path: Blackjack.cs
+    startLine: 31
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Hit = 0
+    return:
+      type: _208_Group_Project_Demo.BlackjackAction
+- uid: _208_Group_Project_Demo.BlackjackAction.Stand
+  commentId: F:_208_Group_Project_Demo.BlackjackAction.Stand
+  id: Stand
+  parent: _208_Group_Project_Demo.BlackjackAction
+  langs:
+  - csharp
+  - vb
+  name: Stand
+  nameWithType: BlackjackAction.Stand
+  fullName: _208_Group_Project_Demo.BlackjackAction.Stand
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Stand
+    path: Blackjack.cs
+    startLine: 32
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Stand = 1
+    return:
+      type: _208_Group_Project_Demo.BlackjackAction
+references:
+- uid: _208_Group_Project_Demo
+  commentId: N:_208_Group_Project_Demo
+  href: _208_Group_Project_Demo.html
+  name: _208_Group_Project_Demo
+  nameWithType: _208_Group_Project_Demo
+  fullName: _208_Group_Project_Demo
+- uid: _208_Group_Project_Demo.BlackjackAction
+  commentId: T:_208_Group_Project_Demo.BlackjackAction
+  parent: _208_Group_Project_Demo
+  href: _208_Group_Project_Demo.BlackjackAction.html
+  name: BlackjackAction
+  nameWithType: BlackjackAction
+  fullName: _208_Group_Project_Demo.BlackjackAction

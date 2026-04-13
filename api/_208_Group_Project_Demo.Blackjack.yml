@@ -1,0 +1,980 @@
+### YamlMime:ManagedReference
+items:
+- uid: _208_Group_Project_Demo.Blackjack
+  commentId: T:_208_Group_Project_Demo.Blackjack
+  id: Blackjack
+  parent: _208_Group_Project_Demo
+  children:
+  - _208_Group_Project_Demo.Blackjack.#ctor
+  - _208_Group_Project_Demo.Blackjack.DealCards(System.Collections.Generic.List{_208_Group_Project_Demo.Card},System.Int32)
+  - _208_Group_Project_Demo.Blackjack.DealerTurn
+  - _208_Group_Project_Demo.Blackjack.EndGame
+  - _208_Group_Project_Demo.Blackjack.HandToString(System.Collections.Generic.List{_208_Group_Project_Demo.Card})
+  - _208_Group_Project_Demo.Blackjack.HandValue(System.Collections.Generic.List{_208_Group_Project_Demo.Card})
+  - _208_Group_Project_Demo.Blackjack.LookAtDealerHand
+  - _208_Group_Project_Demo.Blackjack.PlayBlackjack
+  - _208_Group_Project_Demo.Blackjack.PlayerTurn(_208_Group_Project_Demo.BlackjackAction)
+  - _208_Group_Project_Demo.Blackjack.ShoeCount
+  - _208_Group_Project_Demo.Blackjack.StartBlackjack
+  - _208_Group_Project_Demo.Blackjack.currentState
+  - _208_Group_Project_Demo.Blackjack.playerHand
+  - _208_Group_Project_Demo.Blackjack.playerValue
+  langs:
+  - csharp
+  - vb
+  name: Blackjack
+  nameWithType: Blackjack
+  fullName: _208_Group_Project_Demo.Blackjack
+  type: Class
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Blackjack
+    path: Blackjack.cs
+    startLine: 38
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  summary: Represents a game of blackjack, managing the card shoe, player and dealer hands, and game logic.
+  example: []
+  syntax:
+    content: public class Blackjack
+    content.vb: Public Class Blackjack
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: _208_Group_Project_Demo.Blackjack.playerHand
+  commentId: P:_208_Group_Project_Demo.Blackjack.playerHand
+  id: playerHand
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: playerHand
+  nameWithType: Blackjack.playerHand
+  fullName: _208_Group_Project_Demo.Blackjack.playerHand
+  type: Property
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: playerHand
+    path: Blackjack.cs
+    startLine: 44
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public List<Card> playerHand { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{_208_Group_Project_Demo.Card}
+    content.vb: Public Property playerHand As List(Of Card)
+  overload: _208_Group_Project_Demo.Blackjack.playerHand*
+- uid: _208_Group_Project_Demo.Blackjack.playerValue
+  commentId: P:_208_Group_Project_Demo.Blackjack.playerValue
+  id: playerValue
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: playerValue
+  nameWithType: Blackjack.playerValue
+  fullName: _208_Group_Project_Demo.Blackjack.playerValue
+  type: Property
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: playerValue
+    path: Blackjack.cs
+    startLine: 45
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public int playerValue { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property playerValue As Integer
+  overload: _208_Group_Project_Demo.Blackjack.playerValue*
+- uid: _208_Group_Project_Demo.Blackjack.currentState
+  commentId: P:_208_Group_Project_Demo.Blackjack.currentState
+  id: currentState
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: currentState
+  nameWithType: Blackjack.currentState
+  fullName: _208_Group_Project_Demo.Blackjack.currentState
+  type: Property
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: currentState
+    path: Blackjack.cs
+    startLine: 50
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public BlackjackState currentState { get; }
+    parameters: []
+    return:
+      type: _208_Group_Project_Demo.BlackjackState
+    content.vb: Public Property currentState As BlackjackState
+  overload: _208_Group_Project_Demo.Blackjack.currentState*
+- uid: _208_Group_Project_Demo.Blackjack.#ctor
+  commentId: M:_208_Group_Project_Demo.Blackjack.#ctor
+  id: '#ctor'
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: Blackjack()
+  nameWithType: Blackjack.Blackjack()
+  fullName: _208_Group_Project_Demo.Blackjack.Blackjack()
+  type: Constructor
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: .ctor
+    path: Blackjack.cs
+    startLine: 52
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public Blackjack()
+    content.vb: Public Sub New()
+  overload: _208_Group_Project_Demo.Blackjack.#ctor*
+  nameWithType.vb: Blackjack.New()
+  fullName.vb: _208_Group_Project_Demo.Blackjack.New()
+  name.vb: New()
+- uid: _208_Group_Project_Demo.Blackjack.DealCards(System.Collections.Generic.List{_208_Group_Project_Demo.Card},System.Int32)
+  commentId: M:_208_Group_Project_Demo.Blackjack.DealCards(System.Collections.Generic.List{_208_Group_Project_Demo.Card},System.Int32)
+  id: DealCards(System.Collections.Generic.List{_208_Group_Project_Demo.Card},System.Int32)
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: DealCards(List<Card>, int)
+  nameWithType: Blackjack.DealCards(List<Card>, int)
+  fullName: _208_Group_Project_Demo.Blackjack.DealCards(System.Collections.Generic.List<_208_Group_Project_Demo.Card>, int)
+  type: Method
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealCards
+    path: Blackjack.cs
+    startLine: 89
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  summary: Deals n cards to either the player or the dealer, specified with toPlayer
+  example: []
+  syntax:
+    content: public List<Card> DealCards(List<Card> toHand, int n = 1)
+    parameters:
+    - id: toHand
+      type: System.Collections.Generic.List{_208_Group_Project_Demo.Card}
+      description: The hand the cards are dealt to
+    - id: n
+      type: System.Int32
+      description: The number of cards to deal
+    return:
+      type: System.Collections.Generic.List{_208_Group_Project_Demo.Card}
+      description: The hand with cards dealt to it
+    content.vb: Public Function DealCards(toHand As List(Of Card), n As Integer = 1) As List(Of Card)
+  overload: _208_Group_Project_Demo.Blackjack.DealCards*
+  nameWithType.vb: Blackjack.DealCards(List(Of Card), Integer)
+  fullName.vb: _208_Group_Project_Demo.Blackjack.DealCards(System.Collections.Generic.List(Of _208_Group_Project_Demo.Card), Integer)
+  name.vb: DealCards(List(Of Card), Integer)
+- uid: _208_Group_Project_Demo.Blackjack.PlayBlackjack
+  commentId: M:_208_Group_Project_Demo.Blackjack.PlayBlackjack
+  id: PlayBlackjack
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: PlayBlackjack()
+  nameWithType: Blackjack.PlayBlackjack()
+  fullName: _208_Group_Project_Demo.Blackjack.PlayBlackjack()
+  type: Method
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayBlackjack
+    path: Blackjack.cs
+    startLine: 105
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  summary: >-
+    Plays a complete game of blackjack between the player and the dealer, handling all game logic and user
+
+    interaction.
+  example: []
+  syntax:
+    content: public BlackjackResult PlayBlackjack()
+    return:
+      type: _208_Group_Project_Demo.BlackjackResult
+      description: A BlackjackResult indicating the outcome of the game.
+    content.vb: Public Function PlayBlackjack() As BlackjackResult
+  overload: _208_Group_Project_Demo.Blackjack.PlayBlackjack*
+- uid: _208_Group_Project_Demo.Blackjack.StartBlackjack
+  commentId: M:_208_Group_Project_Demo.Blackjack.StartBlackjack
+  id: StartBlackjack
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: StartBlackjack()
+  nameWithType: Blackjack.StartBlackjack()
+  fullName: _208_Group_Project_Demo.Blackjack.StartBlackjack()
+  type: Method
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: StartBlackjack
+    path: Blackjack.cs
+    startLine: 231
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  summary: >-
+    Initializes and starts a new game of blackjack, dealing cards to the player and dealer and updating the game
+
+    state.
+  example: []
+  syntax:
+    content: public void StartBlackjack()
+    content.vb: Public Sub StartBlackjack()
+  overload: _208_Group_Project_Demo.Blackjack.StartBlackjack*
+- uid: _208_Group_Project_Demo.Blackjack.PlayerTurn(_208_Group_Project_Demo.BlackjackAction)
+  commentId: M:_208_Group_Project_Demo.Blackjack.PlayerTurn(_208_Group_Project_Demo.BlackjackAction)
+  id: PlayerTurn(_208_Group_Project_Demo.BlackjackAction)
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: PlayerTurn(BlackjackAction)
+  nameWithType: Blackjack.PlayerTurn(BlackjackAction)
+  fullName: _208_Group_Project_Demo.Blackjack.PlayerTurn(_208_Group_Project_Demo.BlackjackAction)
+  type: Method
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayerTurn
+    path: Blackjack.cs
+    startLine: 275
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  summary: Processes the player's action during their turn in a game of Blackjack.
+  example: []
+  syntax:
+    content: public void PlayerTurn(BlackjackAction playerAction)
+    parameters:
+    - id: playerAction
+      type: _208_Group_Project_Demo.BlackjackAction
+      description: The action chosen by the player, such as Hit or Stand.
+    content.vb: Public Sub PlayerTurn(playerAction As BlackjackAction)
+  overload: _208_Group_Project_Demo.Blackjack.PlayerTurn*
+- uid: _208_Group_Project_Demo.Blackjack.DealerTurn
+  commentId: M:_208_Group_Project_Demo.Blackjack.DealerTurn
+  id: DealerTurn
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: DealerTurn()
+  nameWithType: Blackjack.DealerTurn()
+  fullName: _208_Group_Project_Demo.Blackjack.DealerTurn()
+  type: Method
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerTurn
+    path: Blackjack.cs
+    startLine: 313
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  summary: >-
+    Executes the dealer's turn in the Blackjack game, updating the dealer's hand and game state according to
+
+    standard rules.
+  example: []
+  syntax:
+    content: public void DealerTurn()
+    content.vb: Public Sub DealerTurn()
+  overload: _208_Group_Project_Demo.Blackjack.DealerTurn*
+- uid: _208_Group_Project_Demo.Blackjack.EndGame
+  commentId: M:_208_Group_Project_Demo.Blackjack.EndGame
+  id: EndGame
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: EndGame()
+  nameWithType: Blackjack.EndGame()
+  fullName: _208_Group_Project_Demo.Blackjack.EndGame()
+  type: Method
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: EndGame
+    path: Blackjack.cs
+    startLine: 347
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  summary: >-
+    Ends the current blackjack game, determines the outcome based on player and dealer hands, and outputs the
+
+    result.
+  example: []
+  syntax:
+    content: public BlackjackResult EndGame()
+    return:
+      type: _208_Group_Project_Demo.BlackjackResult
+      description: A BlackjackResult value indicating the outcome of the game.
+    content.vb: Public Function EndGame() As BlackjackResult
+  overload: _208_Group_Project_Demo.Blackjack.EndGame*
+- uid: _208_Group_Project_Demo.Blackjack.LookAtDealerHand
+  commentId: M:_208_Group_Project_Demo.Blackjack.LookAtDealerHand
+  id: LookAtDealerHand
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: LookAtDealerHand()
+  nameWithType: Blackjack.LookAtDealerHand()
+  fullName: _208_Group_Project_Demo.Blackjack.LookAtDealerHand()
+  type: Method
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: LookAtDealerHand
+    path: Blackjack.cs
+    startLine: 408
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public List<Card> LookAtDealerHand()
+    return:
+      type: System.Collections.Generic.List{_208_Group_Project_Demo.Card}
+    content.vb: Public Function LookAtDealerHand() As List(Of Card)
+  overload: _208_Group_Project_Demo.Blackjack.LookAtDealerHand*
+- uid: _208_Group_Project_Demo.Blackjack.ShoeCount
+  commentId: M:_208_Group_Project_Demo.Blackjack.ShoeCount
+  id: ShoeCount
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: ShoeCount()
+  nameWithType: Blackjack.ShoeCount()
+  fullName: _208_Group_Project_Demo.Blackjack.ShoeCount()
+  type: Method
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: ShoeCount
+    path: Blackjack.cs
+    startLine: 419
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public int ShoeCount()
+    return:
+      type: System.Int32
+    content.vb: Public Function ShoeCount() As Integer
+  overload: _208_Group_Project_Demo.Blackjack.ShoeCount*
+- uid: _208_Group_Project_Demo.Blackjack.HandValue(System.Collections.Generic.List{_208_Group_Project_Demo.Card})
+  commentId: M:_208_Group_Project_Demo.Blackjack.HandValue(System.Collections.Generic.List{_208_Group_Project_Demo.Card})
+  id: HandValue(System.Collections.Generic.List{_208_Group_Project_Demo.Card})
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: HandValue(List<Card>)
+  nameWithType: Blackjack.HandValue(List<Card>)
+  fullName: _208_Group_Project_Demo.Blackjack.HandValue(System.Collections.Generic.List<_208_Group_Project_Demo.Card>)
+  type: Method
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: HandValue
+    path: Blackjack.cs
+    startLine: 431
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  summary: >-
+    Calculates the total value of a hand of cards, treating aces as 1 or 11 to maximize the hand's value without
+
+    exceeding 21.
+  example: []
+  syntax:
+    content: public static int HandValue(List<Card> hand)
+    parameters:
+    - id: hand
+      type: System.Collections.Generic.List{_208_Group_Project_Demo.Card}
+      description: The list of cards whose value is to be calculated.
+    return:
+      type: System.Int32
+      description: The total value of the hand.
+    content.vb: Public Shared Function HandValue(hand As List(Of Card)) As Integer
+  overload: _208_Group_Project_Demo.Blackjack.HandValue*
+  nameWithType.vb: Blackjack.HandValue(List(Of Card))
+  fullName.vb: _208_Group_Project_Demo.Blackjack.HandValue(System.Collections.Generic.List(Of _208_Group_Project_Demo.Card))
+  name.vb: HandValue(List(Of Card))
+- uid: _208_Group_Project_Demo.Blackjack.HandToString(System.Collections.Generic.List{_208_Group_Project_Demo.Card})
+  commentId: M:_208_Group_Project_Demo.Blackjack.HandToString(System.Collections.Generic.List{_208_Group_Project_Demo.Card})
+  id: HandToString(System.Collections.Generic.List{_208_Group_Project_Demo.Card})
+  parent: _208_Group_Project_Demo.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: HandToString(List<Card>)
+  nameWithType: Blackjack.HandToString(List<Card>)
+  fullName: _208_Group_Project_Demo.Blackjack.HandToString(System.Collections.Generic.List<_208_Group_Project_Demo.Card>)
+  type: Method
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: HandToString
+    path: Blackjack.cs
+    startLine: 466
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  summary: Returns a comma-separated string of card IDs from the given hand.
+  example: []
+  syntax:
+    content: public static string HandToString(List<Card> hand)
+    parameters:
+    - id: hand
+      type: System.Collections.Generic.List{_208_Group_Project_Demo.Card}
+      description: The list of Card objects representing the hand.
+    return:
+      type: System.String
+      description: A string containing the IDs of the cards in the hand, separated by commas.
+    content.vb: Public Shared Function HandToString(hand As List(Of Card)) As String
+  overload: _208_Group_Project_Demo.Blackjack.HandToString*
+  nameWithType.vb: Blackjack.HandToString(List(Of Card))
+  fullName.vb: _208_Group_Project_Demo.Blackjack.HandToString(System.Collections.Generic.List(Of _208_Group_Project_Demo.Card))
+  name.vb: HandToString(List(Of Card))
+references:
+- uid: _208_Group_Project_Demo
+  commentId: N:_208_Group_Project_Demo
+  href: _208_Group_Project_Demo.html
+  name: _208_Group_Project_Demo
+  nameWithType: _208_Group_Project_Demo
+  fullName: _208_Group_Project_Demo
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: _208_Group_Project_Demo.Blackjack.playerHand*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.playerHand
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_playerHand
+  name: playerHand
+  nameWithType: Blackjack.playerHand
+  fullName: _208_Group_Project_Demo.Blackjack.playerHand
+- uid: System.Collections.Generic.List{_208_Group_Project_Demo.Card}
+  commentId: T:System.Collections.Generic.List{_208_Group_Project_Demo.Card}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Card>
+  nameWithType: List<Card>
+  fullName: System.Collections.Generic.List<_208_Group_Project_Demo.Card>
+  nameWithType.vb: List(Of Card)
+  fullName.vb: System.Collections.Generic.List(Of _208_Group_Project_Demo.Card)
+  name.vb: List(Of Card)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: _208_Group_Project_Demo.Card
+    name: Card
+    href: _208_Group_Project_Demo.Card.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: _208_Group_Project_Demo.Card
+    name: Card
+    href: _208_Group_Project_Demo.Card.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: _208_Group_Project_Demo.Blackjack.playerValue*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.playerValue
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_playerValue
+  name: playerValue
+  nameWithType: Blackjack.playerValue
+  fullName: _208_Group_Project_Demo.Blackjack.playerValue
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: _208_Group_Project_Demo.Blackjack.currentState*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.currentState
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_currentState
+  name: currentState
+  nameWithType: Blackjack.currentState
+  fullName: _208_Group_Project_Demo.Blackjack.currentState
+- uid: _208_Group_Project_Demo.BlackjackState
+  commentId: T:_208_Group_Project_Demo.BlackjackState
+  parent: _208_Group_Project_Demo
+  href: _208_Group_Project_Demo.BlackjackState.html
+  name: BlackjackState
+  nameWithType: BlackjackState
+  fullName: _208_Group_Project_Demo.BlackjackState
+- uid: _208_Group_Project_Demo.Blackjack.#ctor*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.#ctor
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack__ctor
+  name: Blackjack
+  nameWithType: Blackjack.Blackjack
+  fullName: _208_Group_Project_Demo.Blackjack.Blackjack
+  nameWithType.vb: Blackjack.New
+  fullName.vb: _208_Group_Project_Demo.Blackjack.New
+  name.vb: New
+- uid: _208_Group_Project_Demo.Blackjack.DealCards*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.DealCards
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_DealCards_System_Collections_Generic_List__208_Group_Project_Demo_Card__System_Int32_
+  name: DealCards
+  nameWithType: Blackjack.DealCards
+  fullName: _208_Group_Project_Demo.Blackjack.DealCards
+- uid: _208_Group_Project_Demo.Blackjack.PlayBlackjack*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.PlayBlackjack
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_PlayBlackjack
+  name: PlayBlackjack
+  nameWithType: Blackjack.PlayBlackjack
+  fullName: _208_Group_Project_Demo.Blackjack.PlayBlackjack
+- uid: _208_Group_Project_Demo.BlackjackResult
+  commentId: T:_208_Group_Project_Demo.BlackjackResult
+  parent: _208_Group_Project_Demo
+  href: _208_Group_Project_Demo.BlackjackResult.html
+  name: BlackjackResult
+  nameWithType: BlackjackResult
+  fullName: _208_Group_Project_Demo.BlackjackResult
+- uid: _208_Group_Project_Demo.Blackjack.StartBlackjack*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.StartBlackjack
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_StartBlackjack
+  name: StartBlackjack
+  nameWithType: Blackjack.StartBlackjack
+  fullName: _208_Group_Project_Demo.Blackjack.StartBlackjack
+- uid: _208_Group_Project_Demo.Blackjack.PlayerTurn*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.PlayerTurn
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_PlayerTurn__208_Group_Project_Demo_BlackjackAction_
+  name: PlayerTurn
+  nameWithType: Blackjack.PlayerTurn
+  fullName: _208_Group_Project_Demo.Blackjack.PlayerTurn
+- uid: _208_Group_Project_Demo.BlackjackAction
+  commentId: T:_208_Group_Project_Demo.BlackjackAction
+  parent: _208_Group_Project_Demo
+  href: _208_Group_Project_Demo.BlackjackAction.html
+  name: BlackjackAction
+  nameWithType: BlackjackAction
+  fullName: _208_Group_Project_Demo.BlackjackAction
+- uid: _208_Group_Project_Demo.Blackjack.DealerTurn*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.DealerTurn
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_DealerTurn
+  name: DealerTurn
+  nameWithType: Blackjack.DealerTurn
+  fullName: _208_Group_Project_Demo.Blackjack.DealerTurn
+- uid: _208_Group_Project_Demo.Blackjack.EndGame*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.EndGame
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_EndGame
+  name: EndGame
+  nameWithType: Blackjack.EndGame
+  fullName: _208_Group_Project_Demo.Blackjack.EndGame
+- uid: _208_Group_Project_Demo.Blackjack.LookAtDealerHand*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.LookAtDealerHand
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_LookAtDealerHand
+  name: LookAtDealerHand
+  nameWithType: Blackjack.LookAtDealerHand
+  fullName: _208_Group_Project_Demo.Blackjack.LookAtDealerHand
+- uid: _208_Group_Project_Demo.Blackjack.ShoeCount*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.ShoeCount
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_ShoeCount
+  name: ShoeCount
+  nameWithType: Blackjack.ShoeCount
+  fullName: _208_Group_Project_Demo.Blackjack.ShoeCount
+- uid: _208_Group_Project_Demo.Blackjack.HandValue*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.HandValue
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_HandValue_System_Collections_Generic_List__208_Group_Project_Demo_Card__
+  name: HandValue
+  nameWithType: Blackjack.HandValue
+  fullName: _208_Group_Project_Demo.Blackjack.HandValue
+- uid: _208_Group_Project_Demo.Blackjack.HandToString*
+  commentId: Overload:_208_Group_Project_Demo.Blackjack.HandToString
+  href: _208_Group_Project_Demo.Blackjack.html#_208_Group_Project_Demo_Blackjack_HandToString_System_Collections_Generic_List__208_Group_Project_Demo_Card__
+  name: HandToString
+  nameWithType: Blackjack.HandToString
+  fullName: _208_Group_Project_Demo.Blackjack.HandToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

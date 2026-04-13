@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: _208_Group_Project_Demo.Suit
+  commentId: T:_208_Group_Project_Demo.Suit
+  id: Suit
+  parent: _208_Group_Project_Demo
+  children:
+  - _208_Group_Project_Demo.Suit.Club
+  - _208_Group_Project_Demo.Suit.Diamond
+  - _208_Group_Project_Demo.Suit.Heart
+  - _208_Group_Project_Demo.Suit.Spade
+  langs:
+  - csharp
+  - vb
+  name: Suit
+  nameWithType: Suit
+  fullName: _208_Group_Project_Demo.Suit
+  type: Enum
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Suit
+    path: Card.cs
+    startLine: 8
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public enum Suit
+    content.vb: Public Enum Suit
+- uid: _208_Group_Project_Demo.Suit.Club
+  commentId: F:_208_Group_Project_Demo.Suit.Club
+  id: Club
+  parent: _208_Group_Project_Demo.Suit
+  langs:
+  - csharp
+  - vb
+  name: Club
+  nameWithType: Suit.Club
+  fullName: _208_Group_Project_Demo.Suit.Club
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Club
+    path: Card.cs
+    startLine: 10
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Club = 0
+    return:
+      type: _208_Group_Project_Demo.Suit
+- uid: _208_Group_Project_Demo.Suit.Diamond
+  commentId: F:_208_Group_Project_Demo.Suit.Diamond
+  id: Diamond
+  parent: _208_Group_Project_Demo.Suit
+  langs:
+  - csharp
+  - vb
+  name: Diamond
+  nameWithType: Suit.Diamond
+  fullName: _208_Group_Project_Demo.Suit.Diamond
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Diamond
+    path: Card.cs
+    startLine: 11
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Diamond = 1
+    return:
+      type: _208_Group_Project_Demo.Suit
+- uid: _208_Group_Project_Demo.Suit.Heart
+  commentId: F:_208_Group_Project_Demo.Suit.Heart
+  id: Heart
+  parent: _208_Group_Project_Demo.Suit
+  langs:
+  - csharp
+  - vb
+  name: Heart
+  nameWithType: Suit.Heart
+  fullName: _208_Group_Project_Demo.Suit.Heart
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Heart
+    path: Card.cs
+    startLine: 12
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Heart = 2
+    return:
+      type: _208_Group_Project_Demo.Suit
+- uid: _208_Group_Project_Demo.Suit.Spade
+  commentId: F:_208_Group_Project_Demo.Suit.Spade
+  id: Spade
+  parent: _208_Group_Project_Demo.Suit
+  langs:
+  - csharp
+  - vb
+  name: Spade
+  nameWithType: Suit.Spade
+  fullName: _208_Group_Project_Demo.Suit.Spade
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Spade
+    path: Card.cs
+    startLine: 13
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Spade = 3
+    return:
+      type: _208_Group_Project_Demo.Suit
+references:
+- uid: _208_Group_Project_Demo
+  commentId: N:_208_Group_Project_Demo
+  href: _208_Group_Project_Demo.html
+  name: _208_Group_Project_Demo
+  nameWithType: _208_Group_Project_Demo
+  fullName: _208_Group_Project_Demo
+- uid: _208_Group_Project_Demo.Suit
+  commentId: T:_208_Group_Project_Demo.Suit
+  parent: _208_Group_Project_Demo
+  href: _208_Group_Project_Demo.Suit.html
+  name: Suit
+  nameWithType: Suit
+  fullName: _208_Group_Project_Demo.Suit

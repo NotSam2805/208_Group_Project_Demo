@@ -1,0 +1,393 @@
+### YamlMime:ManagedReference
+items:
+- uid: _208_Group_Project_Demo.Rank
+  commentId: T:_208_Group_Project_Demo.Rank
+  id: Rank
+  parent: _208_Group_Project_Demo
+  children:
+  - _208_Group_Project_Demo.Rank.Ace
+  - _208_Group_Project_Demo.Rank.Eight
+  - _208_Group_Project_Demo.Rank.Five
+  - _208_Group_Project_Demo.Rank.Four
+  - _208_Group_Project_Demo.Rank.Jack
+  - _208_Group_Project_Demo.Rank.King
+  - _208_Group_Project_Demo.Rank.Nine
+  - _208_Group_Project_Demo.Rank.Queen
+  - _208_Group_Project_Demo.Rank.Seven
+  - _208_Group_Project_Demo.Rank.Six
+  - _208_Group_Project_Demo.Rank.Ten
+  - _208_Group_Project_Demo.Rank.Three
+  - _208_Group_Project_Demo.Rank.Two
+  langs:
+  - csharp
+  - vb
+  name: Rank
+  nameWithType: Rank
+  fullName: _208_Group_Project_Demo.Rank
+  type: Enum
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Rank
+    path: Card.cs
+    startLine: 16
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public enum Rank
+    content.vb: Public Enum Rank
+- uid: _208_Group_Project_Demo.Rank.Ace
+  commentId: F:_208_Group_Project_Demo.Rank.Ace
+  id: Ace
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Ace
+  nameWithType: Rank.Ace
+  fullName: _208_Group_Project_Demo.Rank.Ace
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Ace
+    path: Card.cs
+    startLine: 18
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Ace = 0
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Two
+  commentId: F:_208_Group_Project_Demo.Rank.Two
+  id: Two
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: Rank.Two
+  fullName: _208_Group_Project_Demo.Rank.Two
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Two
+    path: Card.cs
+    startLine: 19
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Two = 1
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Three
+  commentId: F:_208_Group_Project_Demo.Rank.Three
+  id: Three
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Three
+  nameWithType: Rank.Three
+  fullName: _208_Group_Project_Demo.Rank.Three
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Three
+    path: Card.cs
+    startLine: 20
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Three = 2
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Four
+  commentId: F:_208_Group_Project_Demo.Rank.Four
+  id: Four
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Four
+  nameWithType: Rank.Four
+  fullName: _208_Group_Project_Demo.Rank.Four
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Four
+    path: Card.cs
+    startLine: 21
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Four = 3
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Five
+  commentId: F:_208_Group_Project_Demo.Rank.Five
+  id: Five
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Five
+  nameWithType: Rank.Five
+  fullName: _208_Group_Project_Demo.Rank.Five
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Five
+    path: Card.cs
+    startLine: 22
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Five = 4
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Six
+  commentId: F:_208_Group_Project_Demo.Rank.Six
+  id: Six
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Six
+  nameWithType: Rank.Six
+  fullName: _208_Group_Project_Demo.Rank.Six
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Six
+    path: Card.cs
+    startLine: 23
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Six = 5
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Seven
+  commentId: F:_208_Group_Project_Demo.Rank.Seven
+  id: Seven
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Seven
+  nameWithType: Rank.Seven
+  fullName: _208_Group_Project_Demo.Rank.Seven
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Seven
+    path: Card.cs
+    startLine: 24
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Seven = 6
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Eight
+  commentId: F:_208_Group_Project_Demo.Rank.Eight
+  id: Eight
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Eight
+  nameWithType: Rank.Eight
+  fullName: _208_Group_Project_Demo.Rank.Eight
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Eight
+    path: Card.cs
+    startLine: 25
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Eight = 7
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Nine
+  commentId: F:_208_Group_Project_Demo.Rank.Nine
+  id: Nine
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Nine
+  nameWithType: Rank.Nine
+  fullName: _208_Group_Project_Demo.Rank.Nine
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Nine
+    path: Card.cs
+    startLine: 26
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Nine = 8
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Ten
+  commentId: F:_208_Group_Project_Demo.Rank.Ten
+  id: Ten
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Ten
+  nameWithType: Rank.Ten
+  fullName: _208_Group_Project_Demo.Rank.Ten
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Ten
+    path: Card.cs
+    startLine: 27
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Ten = 9
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Jack
+  commentId: F:_208_Group_Project_Demo.Rank.Jack
+  id: Jack
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Jack
+  nameWithType: Rank.Jack
+  fullName: _208_Group_Project_Demo.Rank.Jack
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Jack
+    path: Card.cs
+    startLine: 28
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Jack = 10
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.King
+  commentId: F:_208_Group_Project_Demo.Rank.King
+  id: King
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: King
+  nameWithType: Rank.King
+  fullName: _208_Group_Project_Demo.Rank.King
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: King
+    path: Card.cs
+    startLine: 29
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: King = 11
+    return:
+      type: _208_Group_Project_Demo.Rank
+- uid: _208_Group_Project_Demo.Rank.Queen
+  commentId: F:_208_Group_Project_Demo.Rank.Queen
+  id: Queen
+  parent: _208_Group_Project_Demo.Rank
+  langs:
+  - csharp
+  - vb
+  name: Queen
+  nameWithType: Rank.Queen
+  fullName: _208_Group_Project_Demo.Rank.Queen
+  type: Field
+  source:
+    remote:
+      path: Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Queen
+    path: Card.cs
+    startLine: 30
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: Queen = 12
+    return:
+      type: _208_Group_Project_Demo.Rank
+references:
+- uid: _208_Group_Project_Demo
+  commentId: N:_208_Group_Project_Demo
+  href: _208_Group_Project_Demo.html
+  name: _208_Group_Project_Demo
+  nameWithType: _208_Group_Project_Demo
+  fullName: _208_Group_Project_Demo
+- uid: _208_Group_Project_Demo.Rank
+  commentId: T:_208_Group_Project_Demo.Rank
+  parent: _208_Group_Project_Demo
+  href: _208_Group_Project_Demo.Rank.html
+  name: Rank
+  nameWithType: Rank
+  fullName: _208_Group_Project_Demo.Rank

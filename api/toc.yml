@@ -1,0 +1,34 @@
+### YamlMime:TableOfContent
+items:
+- uid: _208_Group_Project_Demo
+  name: _208_Group_Project_Demo
+  type: Namespace
+  items:
+  - uid: _208_Group_Project_Demo.Blackjack
+    name: Blackjack
+    type: Class
+  - uid: _208_Group_Project_Demo.BlackjackAction
+    name: BlackjackAction
+    type: Enum
+  - uid: _208_Group_Project_Demo.BlackjackResult
+    name: BlackjackResult
+    type: Enum
+  - uid: _208_Group_Project_Demo.BlackjackState
+    name: BlackjackState
+    type: Enum
+  - uid: _208_Group_Project_Demo.Card
+    name: Card
+    type: Class
+  - uid: _208_Group_Project_Demo.CardCounter
+    name: CardCounter
+    type: Class
+  - uid: _208_Group_Project_Demo.FrontEnd
+    name: FrontEnd
+    type: Class
+  - uid: _208_Group_Project_Demo.Rank
+    name: Rank
+    type: Enum
+  - uid: _208_Group_Project_Demo.Suit
+    name: Suit
+    type: Enum
+memberLayout: SamePage

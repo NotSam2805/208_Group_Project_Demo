@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: _208_Group_Project_Demo.BlackjackState
+  commentId: T:_208_Group_Project_Demo.BlackjackState
+  id: BlackjackState
+  parent: _208_Group_Project_Demo
+  children:
+  - _208_Group_Project_Demo.BlackjackState.DealerTurn
+  - _208_Group_Project_Demo.BlackjackState.GameEnd
+  - _208_Group_Project_Demo.BlackjackState.NoGame
+  - _208_Group_Project_Demo.BlackjackState.PlayerTurn
+  langs:
+  - csharp
+  - vb
+  name: BlackjackState
+  nameWithType: BlackjackState
+  fullName: _208_Group_Project_Demo.BlackjackState
+  type: Enum
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: BlackjackState
+    path: Blackjack.cs
+    startLine: 21
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public enum BlackjackState
+    content.vb: Public Enum BlackjackState
+- uid: _208_Group_Project_Demo.BlackjackState.NoGame
+  commentId: F:_208_Group_Project_Demo.BlackjackState.NoGame
+  id: NoGame
+  parent: _208_Group_Project_Demo.BlackjackState
+  langs:
+  - csharp
+  - vb
+  name: NoGame
+  nameWithType: BlackjackState.NoGame
+  fullName: _208_Group_Project_Demo.BlackjackState.NoGame
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: NoGame
+    path: Blackjack.cs
+    startLine: 23
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: NoGame = 0
+    return:
+      type: _208_Group_Project_Demo.BlackjackState
+- uid: _208_Group_Project_Demo.BlackjackState.PlayerTurn
+  commentId: F:_208_Group_Project_Demo.BlackjackState.PlayerTurn
+  id: PlayerTurn
+  parent: _208_Group_Project_Demo.BlackjackState
+  langs:
+  - csharp
+  - vb
+  name: PlayerTurn
+  nameWithType: BlackjackState.PlayerTurn
+  fullName: _208_Group_Project_Demo.BlackjackState.PlayerTurn
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayerTurn
+    path: Blackjack.cs
+    startLine: 24
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: PlayerTurn = 1
+    return:
+      type: _208_Group_Project_Demo.BlackjackState
+- uid: _208_Group_Project_Demo.BlackjackState.DealerTurn
+  commentId: F:_208_Group_Project_Demo.BlackjackState.DealerTurn
+  id: DealerTurn
+  parent: _208_Group_Project_Demo.BlackjackState
+  langs:
+  - csharp
+  - vb
+  name: DealerTurn
+  nameWithType: BlackjackState.DealerTurn
+  fullName: _208_Group_Project_Demo.BlackjackState.DealerTurn
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerTurn
+    path: Blackjack.cs
+    startLine: 25
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: DealerTurn = 2
+    return:
+      type: _208_Group_Project_Demo.BlackjackState
+- uid: _208_Group_Project_Demo.BlackjackState.GameEnd
+  commentId: F:_208_Group_Project_Demo.BlackjackState.GameEnd
+  id: GameEnd
+  parent: _208_Group_Project_Demo.BlackjackState
+  langs:
+  - csharp
+  - vb
+  name: GameEnd
+  nameWithType: BlackjackState.GameEnd
+  fullName: _208_Group_Project_Demo.BlackjackState.GameEnd
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: GameEnd
+    path: Blackjack.cs
+    startLine: 26
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: GameEnd = 3
+    return:
+      type: _208_Group_Project_Demo.BlackjackState
+references:
+- uid: _208_Group_Project_Demo
+  commentId: N:_208_Group_Project_Demo
+  href: _208_Group_Project_Demo.html
+  name: _208_Group_Project_Demo
+  nameWithType: _208_Group_Project_Demo
+  fullName: _208_Group_Project_Demo
+- uid: _208_Group_Project_Demo.BlackjackState
+  commentId: T:_208_Group_Project_Demo.BlackjackState
+  parent: _208_Group_Project_Demo
+  href: _208_Group_Project_Demo.BlackjackState.html
+  name: BlackjackState
+  nameWithType: BlackjackState
+  fullName: _208_Group_Project_Demo.BlackjackState

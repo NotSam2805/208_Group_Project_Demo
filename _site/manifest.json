@@ -1,0 +1,182 @@
+{
+  "source_base_path": "C:/Programming/208_Group_Project_Demo",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/_208_Group_Project_Demo.Blackjack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/_208_Group_Project_Demo.Blackjack.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "_208_Group_Project_Demo.Blackjack",
+      "Summary": "<p sourcefile=\"api/_208_Group_Project_Demo.Blackjack.yml\" sourcestartlinenumber=\"1\">Represents a game of blackjack, managing the card shoe, player and dealer hands, and game logic.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/_208_Group_Project_Demo.BlackjackAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/_208_Group_Project_Demo.BlackjackAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "_208_Group_Project_Demo.BlackjackAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/_208_Group_Project_Demo.BlackjackResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/_208_Group_Project_Demo.BlackjackResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "_208_Group_Project_Demo.BlackjackResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/_208_Group_Project_Demo.BlackjackState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/_208_Group_Project_Demo.BlackjackState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "_208_Group_Project_Demo.BlackjackState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/_208_Group_Project_Demo.Card.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/_208_Group_Project_Demo.Card.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "_208_Group_Project_Demo.Card",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/_208_Group_Project_Demo.CardCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/_208_Group_Project_Demo.CardCounter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "_208_Group_Project_Demo.CardCounter",
+      "Summary": "<p sourcefile=\"api/_208_Group_Project_Demo.CardCounter.yml\" sourcestartlinenumber=\"1\">Calculates counts according to a HiLo card counting system</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/_208_Group_Project_Demo.FrontEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/_208_Group_Project_Demo.FrontEnd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "_208_Group_Project_Demo.FrontEnd",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/_208_Group_Project_Demo.Rank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/_208_Group_Project_Demo.Rank.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "_208_Group_Project_Demo.Rank",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/_208_Group_Project_Demo.Suit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/_208_Group_Project_Demo.Suit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "_208_Group_Project_Demo.Suit",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/_208_Group_Project_Demo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/_208_Group_Project_Demo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "_208_Group_Project_Demo",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: _208_Group_Project_Demo.BlackjackResult
+  commentId: T:_208_Group_Project_Demo.BlackjackResult
+  id: BlackjackResult
+  parent: _208_Group_Project_Demo
+  children:
+  - _208_Group_Project_Demo.BlackjackResult.BothNatural
+  - _208_Group_Project_Demo.BlackjackResult.DealerBust
+  - _208_Group_Project_Demo.BlackjackResult.DealerNatural
+  - _208_Group_Project_Demo.BlackjackResult.DealerWins
+  - _208_Group_Project_Demo.BlackjackResult.PlayerBust
+  - _208_Group_Project_Demo.BlackjackResult.PlayerNatural
+  - _208_Group_Project_Demo.BlackjackResult.PlayerWins
+  - _208_Group_Project_Demo.BlackjackResult.StandOff
+  langs:
+  - csharp
+  - vb
+  name: BlackjackResult
+  nameWithType: BlackjackResult
+  fullName: _208_Group_Project_Demo.BlackjackResult
+  type: Enum
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: BlackjackResult
+    path: Blackjack.cs
+    startLine: 9
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: public enum BlackjackResult
+    content.vb: Public Enum BlackjackResult
+- uid: _208_Group_Project_Demo.BlackjackResult.PlayerNatural
+  commentId: F:_208_Group_Project_Demo.BlackjackResult.PlayerNatural
+  id: PlayerNatural
+  parent: _208_Group_Project_Demo.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: PlayerNatural
+  nameWithType: BlackjackResult.PlayerNatural
+  fullName: _208_Group_Project_Demo.BlackjackResult.PlayerNatural
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayerNatural
+    path: Blackjack.cs
+    startLine: 11
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: PlayerNatural = 0
+    return:
+      type: _208_Group_Project_Demo.BlackjackResult
+- uid: _208_Group_Project_Demo.BlackjackResult.DealerNatural
+  commentId: F:_208_Group_Project_Demo.BlackjackResult.DealerNatural
+  id: DealerNatural
+  parent: _208_Group_Project_Demo.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: DealerNatural
+  nameWithType: BlackjackResult.DealerNatural
+  fullName: _208_Group_Project_Demo.BlackjackResult.DealerNatural
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerNatural
+    path: Blackjack.cs
+    startLine: 12
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: DealerNatural = 1
+    return:
+      type: _208_Group_Project_Demo.BlackjackResult
+- uid: _208_Group_Project_Demo.BlackjackResult.BothNatural
+  commentId: F:_208_Group_Project_Demo.BlackjackResult.BothNatural
+  id: BothNatural
+  parent: _208_Group_Project_Demo.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: BothNatural
+  nameWithType: BlackjackResult.BothNatural
+  fullName: _208_Group_Project_Demo.BlackjackResult.BothNatural
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: BothNatural
+    path: Blackjack.cs
+    startLine: 13
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: BothNatural = 2
+    return:
+      type: _208_Group_Project_Demo.BlackjackResult
+- uid: _208_Group_Project_Demo.BlackjackResult.PlayerBust
+  commentId: F:_208_Group_Project_Demo.BlackjackResult.PlayerBust
+  id: PlayerBust
+  parent: _208_Group_Project_Demo.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: PlayerBust
+  nameWithType: BlackjackResult.PlayerBust
+  fullName: _208_Group_Project_Demo.BlackjackResult.PlayerBust
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayerBust
+    path: Blackjack.cs
+    startLine: 14
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: PlayerBust = 3
+    return:
+      type: _208_Group_Project_Demo.BlackjackResult
+- uid: _208_Group_Project_Demo.BlackjackResult.DealerBust
+  commentId: F:_208_Group_Project_Demo.BlackjackResult.DealerBust
+  id: DealerBust
+  parent: _208_Group_Project_Demo.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: DealerBust
+  nameWithType: BlackjackResult.DealerBust
+  fullName: _208_Group_Project_Demo.BlackjackResult.DealerBust
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerBust
+    path: Blackjack.cs
+    startLine: 15
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: DealerBust = 4
+    return:
+      type: _208_Group_Project_Demo.BlackjackResult
+- uid: _208_Group_Project_Demo.BlackjackResult.DealerWins
+  commentId: F:_208_Group_Project_Demo.BlackjackResult.DealerWins
+  id: DealerWins
+  parent: _208_Group_Project_Demo.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: DealerWins
+  nameWithType: BlackjackResult.DealerWins
+  fullName: _208_Group_Project_Demo.BlackjackResult.DealerWins
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerWins
+    path: Blackjack.cs
+    startLine: 16
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: DealerWins = 5
+    return:
+      type: _208_Group_Project_Demo.BlackjackResult
+- uid: _208_Group_Project_Demo.BlackjackResult.PlayerWins
+  commentId: F:_208_Group_Project_Demo.BlackjackResult.PlayerWins
+  id: PlayerWins
+  parent: _208_Group_Project_Demo.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: PlayerWins
+  nameWithType: BlackjackResult.PlayerWins
+  fullName: _208_Group_Project_Demo.BlackjackResult.PlayerWins
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayerWins
+    path: Blackjack.cs
+    startLine: 17
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: PlayerWins = 6
+    return:
+      type: _208_Group_Project_Demo.BlackjackResult
+- uid: _208_Group_Project_Demo.BlackjackResult.StandOff
+  commentId: F:_208_Group_Project_Demo.BlackjackResult.StandOff
+  id: StandOff
+  parent: _208_Group_Project_Demo.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: StandOff
+  nameWithType: BlackjackResult.StandOff
+  fullName: _208_Group_Project_Demo.BlackjackResult.StandOff
+  type: Field
+  source:
+    remote:
+      path: Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: StandOff
+    path: Blackjack.cs
+    startLine: 18
+  assemblies:
+  - 208_Group_Project_Demo
+  namespace: _208_Group_Project_Demo
+  syntax:
+    content: StandOff = 7
+    return:
+      type: _208_Group_Project_Demo.BlackjackResult
+references:
+- uid: _208_Group_Project_Demo
+  commentId: N:_208_Group_Project_Demo
+  href: _208_Group_Project_Demo.html
+  name: _208_Group_Project_Demo
+  nameWithType: _208_Group_Project_Demo
+  fullName: _208_Group_Project_Demo
+- uid: _208_Group_Project_Demo.BlackjackResult
+  commentId: T:_208_Group_Project_Demo.BlackjackResult
+  parent: _208_Group_Project_Demo
+  href: _208_Group_Project_Demo.BlackjackResult.html
+  name: BlackjackResult
+  nameWithType: BlackjackResult
+  fullName: _208_Group_Project_Demo.BlackjackResult
