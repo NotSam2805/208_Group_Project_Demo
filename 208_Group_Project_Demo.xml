@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>208_Group_Project_Demo</name>
+    </assembly>
+    <members>
+        <member name="T:_208_Group_Project_Demo.Blackjack">
+            <summary>
+            Represents a game of blackjack, managing the card shoe, player and dealer hands, and game logic.
+            </summary>
+        </member>
+        <member name="M:_208_Group_Project_Demo.Blackjack.DealCards(System.Collections.Generic.List{_208_Group_Project_Demo.Card},System.Int32)">
+            <summary>
+            Deals n cards to either the player or the dealer, specified with toPlayer
+            </summary>
+            <param name="n">The number of cards to deal</param>
+            <param name="toHand">The hand the cards are dealt to</param>
+            <returns>The hand with cards dealt to it</returns>
+        </member>
+        <member name="M:_208_Group_Project_Demo.Blackjack.PlayBlackjack">
+            <summary>
+            Plays a complete game of blackjack between the player and the dealer, handling all game logic and user
+            interaction.
+            </summary>
+            <returns>A BlackjackResult indicating the outcome of the game.</returns>
+        </member>
+        <member name="M:_208_Group_Project_Demo.Blackjack.StartBlackjack">
+            <summary>
+            Initializes and starts a new game of blackjack, dealing cards to the player and dealer and updating the game
+            state.
+            </summary>
+        </member>
+        <member name="M:_208_Group_Project_Demo.Blackjack.PlayerTurn(_208_Group_Project_Demo.BlackjackAction)">
+            <summary>
+            Processes the player's action during their turn in a game of Blackjack.
+            </summary>
+            <param name="playerAction">The action chosen by the player, such as Hit or Stand.</param>
+        </member>
+        <member name="M:_208_Group_Project_Demo.Blackjack.DealerTurn">
+            <summary>
+            Executes the dealer's turn in the Blackjack game, updating the dealer's hand and game state according to
+            standard rules.
+            </summary>
+        </member>
+        <member name="M:_208_Group_Project_Demo.Blackjack.EndGame">
+            <summary>
+            Ends the current blackjack game, determines the outcome based on player and dealer hands, and outputs the
+            result.
+            </summary>
+            <returns>A BlackjackResult value indicating the outcome of the game.</returns>
+        </member>
+        <member name="M:_208_Group_Project_Demo.Blackjack.HandValue(System.Collections.Generic.List{_208_Group_Project_Demo.Card})">
+            <summary>
+            Calculates the total value of a hand of cards, treating aces as 1 or 11 to maximize the hand's value without
+            exceeding 21.
+            </summary>
+            <param name="hand">The list of cards whose value is to be calculated.</param>
+            <returns>The total value of the hand.</returns>
+        </member>
+        <member name="M:_208_Group_Project_Demo.Blackjack.HandToString(System.Collections.Generic.List{_208_Group_Project_Demo.Card})">
+            <summary>
+            Returns a comma-separated string of card IDs from the given hand.
+            </summary>
+            <param name="hand">The list of Card objects representing the hand.</param>
+            <returns>A string containing the IDs of the cards in the hand, separated by commas.</returns>
+        </member>
+        <member name="T:_208_Group_Project_Demo.CardCounter">
+            <summary>
+            Calculates counts according to a HiLo card counting system
+            </summary>
+        </member>
+        <member name="M:_208_Group_Project_Demo.CardCounter.GetRunningCount">
+            <summary>
+            Calculates and returns the current running count based on the cards dealt to the player and dealer,
+            resetting the count if the card shoe has been refilled.
+            </summary>
+            <returns>The current running count after processing new cards.</returns>
+        </member>
+        <member name="M:_208_Group_Project_Demo.CardCounter.GetTrueCount">
+            <summary>
+            Calculates and returns the true count by dividing the running count by the number of decks remaining in the
+            shoe.
+            </summary>
+            <returns>The current true count as an integer.</returns>
+        </member>
+        <member name="M:_208_Group_Project_Demo.CardCounter.CountCard(_208_Group_Project_Demo.Card)">
+            <summary>
+            Adjusts the running count based on the rank of the specified card using predefined rank groups.
+            </summary>
+            <param name="card">The card whose rank is evaluated to update the running count.</param>
+        </member>
+    </members>
+</doc>
