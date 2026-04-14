@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _208_Group_Project_Demo
+namespace Blackjack_Class_Library
 {
     /// <summary>
     /// Calculates counts according to a HiLo card counting system

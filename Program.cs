@@ -1,10 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using _208_Group_Project_Demo;
+using Blackjack_Class_Library;
 
 ///<summary>
 ///Plays blackjack, until user ends.
 ///Displays the running count and true count on every player turn
 ///</summary>
+
+FrontEnd.writeToConsole = true;
 
 var game = new Blackjack();
 var counter = new CardCounter(game);

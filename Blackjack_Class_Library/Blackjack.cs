@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _208_Group_Project_Demo
+namespace Blackjack_Class_Library
 {
     public enum BlackjackResult
     {
@@ -110,8 +110,10 @@ namespace _208_Group_Project_Demo
         /// <summary>
         /// Plays a complete game of blackjack between the player and the dealer, handling all game logic and user
         /// interaction. Use of this function is not recommended, use StartBlackjack to start a game.
+        /// FULLY DEPRECATED
         /// </summary>
         /// <returns>A BlackjackResult indicating the outcome of the game.</returns>
+        /*
         public BlackjackResult PlayBlackjack()
         {
             dealerHand.Clear();
@@ -233,6 +235,7 @@ namespace _208_Group_Project_Demo
             FrontEnd.Output("Player wins");
             return BlackjackResult.PlayerWins;
         }
+        */
 
         public void PlaceBet(double bet)
         {
@@ -267,8 +270,7 @@ namespace _208_Group_Project_Demo
         {
             if (currentState != BlackjackState.NoGame)
             {
-                FrontEnd.Output("Cannot start new game during play");
-                return;
+                throw new Exception("Cannot start new game during play");
             }
 
             dealerHand.Clear();
