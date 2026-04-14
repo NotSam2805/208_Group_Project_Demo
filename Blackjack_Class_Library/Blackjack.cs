@@ -542,6 +542,20 @@ namespace Blackjack_Class_Library
             return dealerHand;
         }
 
+        public int DealerHandSize()
+        {
+            return dealerHand.Count;
+        }
+
+        public int HiddenDealerCards()
+        {
+            if (currentState == BlackjackState.PlayerTurn)
+            {
+                return 1;
+            }
+            return 0;
+        }
+
         public int ShoeCount()
         {
             return cardShoe.Count;
