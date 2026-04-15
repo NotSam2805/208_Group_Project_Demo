@@ -440,6 +440,9 @@ namespace Blackjack_Class_Library
             FrontEnd.Output($"Dealer hand: X, {HandToString(dealerHand)} ({dealerValue})");
             FrontEnd.Output($"Player hand: {HandToString(playerHand)} ({playerValue})");
 
+            playerHand.Clear();
+            dealerHand.Clear();
+
             currentState = BlackjackState.NoGame;
 
             if (playerValue > 21)
