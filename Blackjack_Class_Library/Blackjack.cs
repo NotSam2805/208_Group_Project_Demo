@@ -562,7 +562,10 @@ namespace Blackjack_Class_Library
             return cardShoe.Count;
         }
 
-
+        public int DealerHandValue()
+        {
+            return HandValue(LookAtDealerHand());
+        }
 
 
         /// <summary>
