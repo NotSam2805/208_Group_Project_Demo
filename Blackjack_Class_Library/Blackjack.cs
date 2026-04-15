@@ -239,6 +239,11 @@ namespace Blackjack_Class_Library
 
         public void PlaceBet(double bet)
         {
+            if (playerCredit < bet)
+            {
+                throw new Exception("Cannot place a bet greater than the Players credit");
+            }
+
             if (currentState != BlackjackState.NoGame)
             {
                 throw new Exception("Cannot place a bet during play");
@@ -535,7 +540,7 @@ namespace Blackjack_Class_Library
         {
             if (currentState == BlackjackState.PlayerTurn)
             {
-                var temp = dealerHand;
+                var temp = new List<Card>(dealerHand);
                 temp.Remove(temp[0]);
                 return temp;
             }
@@ -549,11 +554,7 @@ namespace Blackjack_Class_Library
 
         public int HiddenDealerCards()
         {
-            if (currentState == BlackjackState.PlayerTurn)
-            {
-                return 1;
-            }
-            return 0;
+            return dealerHand.Count - LookAtDealerHand().Count;
         }
 
         public int ShoeCount()
