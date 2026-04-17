@@ -63,7 +63,6 @@ namespace Blackjack_Class_Library
                     CountCard(game.playerHand[i]);
                 }
 
-                lastPlayerHandCount = game.playerHand.Count;
             }
 
             var dealerHand = game.LookAtDealerHand();
@@ -75,10 +74,13 @@ namespace Blackjack_Class_Library
                     CountCard(dealerHand[i]);
                 }
 
-                lastDealerHandCount = dealerHand.Count;
             }
 
             lastShoeCount = game.ShoeCount();
+
+            lastPlayerHandCount = game.playerHand.Count;
+            lastDealerHandCount = dealerHand.Count;
+
             return runningCount;
         }
 
