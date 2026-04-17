@@ -100,7 +100,7 @@ namespace Blackjack_Class_Library
         {
             if (Los.Contains(card.rank))
             {
-                runningCount -= 1;
+                runningCount += 1;
                 return;
             }
             if (Noughts.Contains(card.rank))
@@ -109,7 +109,7 @@ namespace Blackjack_Class_Library
             }
             if (His.Contains(card.rank))
             {
-                runningCount += 1;
+                runningCount -= 1;
                 return;
             }
         }

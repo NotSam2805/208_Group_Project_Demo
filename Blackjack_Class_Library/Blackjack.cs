@@ -255,7 +255,11 @@ namespace Blackjack_Class_Library
             }
 
             playerCredit -= bet;
-            playerBet = bet;
+            if (playerBet == null)
+            {
+                playerBet = 0;
+            }
+            playerBet += bet;
         }
 
         public void ShowPlayerCredit()
