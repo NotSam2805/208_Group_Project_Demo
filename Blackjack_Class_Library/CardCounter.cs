@@ -19,7 +19,9 @@ namespace Blackjack_Class_Library
         private int lastDealerHandCount;
         private int lastPlayerHandCount;
 
-        public int lastShoeCount;
+        private int lastShoeCount;
+
+        public double decksLeft { get; private set; }
 
         // Cards in 'Los' are counted as -1, 'Noughts' as 0, 'His' as 1
         private Rank[] Los = { Rank.Two, Rank.Three, Rank.Four, Rank.Five, Rank.Six };
@@ -87,8 +89,8 @@ namespace Blackjack_Class_Library
         /// <returns>The current true count as an integer.</returns>
         public double GetTrueCount()
         {
-            double nDecksLeft = game.ShoeCount() / 52d;
-            trueCount = runningCount / nDecksLeft;
+            decksLeft = game.ShoeCount() / 52d;
+            trueCount = runningCount / decksLeft;
             return trueCount;
         }
 
