@@ -35,27 +35,35 @@ namespace Blackjack_Class_Library
     }
 
     /// <summary>
-    /// Represents a game of blackjack, managing the card shoe, player and dealer hands, and game logic.
+    /// Represents a game of Blackjack, managing the state, player and dealer hands, betting, and game logic.
     /// </summary>
     public class Blackjack
     {
         private const int MIN_SHOE = 35;
         private const int INITIAL_CREDIT = 5000;
 
+        // The 'shoe' that holds all the undealt cards
         private Stack<Card> cardShoe;
 
+        // Player hand and value
         public List<Card> playerHand { get; private set; }
         public int playerValue { get; private set; }
 
-        //Values used for handling bets and player's credit
+        // Values used for handling bets and player's credit
         public double? playerBet { get; private set; }
         public double playerCredit { get; private set; }
 
+        // Dealer hand and value
         private List<Card> dealerHand;
         private int dealerValue;
         
+        // Track the current game state
         public BlackjackState currentState { get; private set; }
 
+        /// <summary>
+        /// Initializes a new instance of the Blackjack class, setting up the card shoe, player and dealer hands, player
+        /// credit, bet, and game state.
+        /// </summary>
         public Blackjack()
         {
             cardShoe = new Stack<Card>();
@@ -68,6 +76,10 @@ namespace Blackjack_Class_Library
             currentState = BlackjackState.NoGame;
         }
 
+        /// <summary>
+        /// Refills the card shoe with the specified number of standard decks.
+        /// </summary>
+        /// <param name="nDecks">The number of decks to include in the shoe. Defaults to 6.</param>
         private void RefillShoe(int nDecks = 6)
         {
             var new_shoe = new List<Card>();
@@ -83,6 +95,9 @@ namespace Blackjack_Class_Library
             cardShoe = new Stack<Card>(new_shoe.ToArray<Card>());
         }
 
+        /// <summary>
+        /// Randomizes the order of cards in the shoe.
+        /// </summary>
         private void ShuffleShoe()
         {
             var shoeArray = cardShoe.ToArray();
@@ -108,135 +123,10 @@ namespace Blackjack_Class_Library
         }
 
         /// <summary>
-        /// Plays a complete game of blackjack between the player and the dealer, handling all game logic and user
-        /// interaction. Use of this function is not recommended, use StartBlackjack to start a game.
-        /// FULLY DEPRECATED
+        /// Places a bet for the player if sufficient credit is available and no game is in progress.
         /// </summary>
-        /// <returns>A BlackjackResult indicating the outcome of the game.</returns>
-        /*
-        public BlackjackResult PlayBlackjack()
-        {
-            dealerHand.Clear();
-            playerHand.Clear();
-
-            if (cardShoe.Count < MIN_SHOE)
-            {
-                RefillShoe();
-            }
-
-            ShuffleShoe();
-
-            playerHand = DealCards(playerHand, 2);
-            dealerHand = DealCards(dealerHand, 2);
-
-            dealerValue = HandValue(dealerHand);
-            playerValue = HandValue(playerHand);
-
-            var tempHand = dealerHand;
-            tempHand.Remove(tempHand[0]);
-            FrontEnd.Output($"Dealer hand: X, {dealerHand[1].id} ({HandValue(tempHand)})");
-            FrontEnd.Output($"Player hand: {HandToString(playerHand)} ({playerValue})");
-
-            FrontEnd.Output("");
-
-            bool playerNatural = playerValue == 21;
-            bool dealerNatural = dealerValue == 21;
-
-            if (playerNatural && dealerNatural)
-            {
-                FrontEnd.Output("Both have blackjack");
-                return BlackjackResult.BothNatural;
-            }
-            else if (playerNatural)
-            {
-                FrontEnd.Output("Player Blackjack");
-                return BlackjackResult.PlayerNatural;
-            }
-            else if (dealerNatural)
-            {
-                FrontEnd.Output("Dealer Blackjack");
-                return BlackjackResult.DealerNatural;
-            }
-
-            //Players turn
-            bool playerStanding = false;
-            while (!playerStanding)
-            {
-                FrontEnd.Output("Hit or stand? (H/S)");
-                var playerAction = FrontEnd.Input();
-
-                if (playerAction == "H" || playerAction == "h")
-                {
-                    playerHand = DealCards(playerHand);
-                    playerValue = HandValue(playerHand);
-
-                    FrontEnd.Output($"Player hand: {HandToString(playerHand)} ({playerValue})");
-
-                    if (playerValue > 21)
-                    {
-                        FrontEnd.Output("Player bust");
-                        FrontEnd.Output($"Dealer: {HandToString(dealerHand)} ({dealerValue})");
-                        return BlackjackResult.PlayerBust;
-                    }
-                    else if (playerValue == 21)
-                    {
-                        playerStanding = true;
-                    }
-                }
-                else
-                {
-                    playerStanding = true;
-                }
-            }
-
-            FrontEnd.Output("");
-
-            //Dealers turn
-            bool dealerStanding = false;
-            while (!dealerStanding)
-            {
-                if (dealerValue <= 16)
-                {
-                    dealerHand = DealCards(dealerHand);
-                    dealerValue = HandValue(dealerHand);
-
-                    FrontEnd.Output($"Dealer hand: {HandToString(dealerHand)} ({dealerValue})");
-
-                    if (dealerValue > 21)
-                    {
-                        FrontEnd.Output("Dealer bust");
-                        FrontEnd.Output($"Dealer: {HandToString(dealerHand)} ({dealerValue})");
-                        return BlackjackResult.DealerBust;
-                    }
-                    else if (dealerValue == 21)
-                    {
-                        dealerStanding = true;
-                    }
-                }
-                else
-                {
-                    dealerStanding = true;
-                }
-            }
-
-            FrontEnd.Output("");
-
-            if (dealerValue == playerValue)
-            {
-                FrontEnd.Output("Stand off");
-                return BlackjackResult.StandOff;
-            }
-            if (dealerValue > playerValue)
-            {
-                FrontEnd.Output("Dealer wins");
-                return BlackjackResult.DealerWins;
-            }
-
-            FrontEnd.Output("Player wins");
-            return BlackjackResult.PlayerWins;
-        }
-        */
-
+        /// <param name="bet">The amount to bet.</param>
+        /// <exception cref="Exception">Thrown if the bet exceeds available credit, a game is in progress, or the bet amount is zero or negative.</exception>
         public void PlaceBet(double bet)
         {
             if (playerCredit < bet)
@@ -314,6 +204,11 @@ namespace Blackjack_Class_Library
             currentState = BlackjackState.PlayerTurn;
         }
 
+        /// <summary>
+        /// Determines whether the player is eligible to double down based on the current game state, hand size, and bet
+        /// status.
+        /// </summary>
+        /// <returns>true if the player can double down; otherwise, false.</returns>
         public bool CanDoubleDown()
         {
             return (currentState == BlackjackState.PlayerTurn) && (playerHand.Count == 2) && (playerBet != null);
@@ -543,6 +438,10 @@ namespace Blackjack_Class_Library
             return BlackjackResult.PlayerWins;
         }
 
+        /// <summary>
+        /// Returns the dealer's hand, hiding the first card during the player's turn.
+        /// </summary>
+        /// <returns>A list of cards representing the dealer's hand, with the first card removed if it is the player's turn.</returns>
         public List<Card> LookAtDealerHand()
         {
             if (currentState == BlackjackState.PlayerTurn)
@@ -554,21 +453,37 @@ namespace Blackjack_Class_Library
             return dealerHand;
         }
 
+        /// <summary>
+        /// Gets the number of cards in the dealer's hand.
+        /// </summary>
+        /// <returns>The count of cards currently held by the dealer.</returns>
         public int DealerHandSize()
         {
             return dealerHand.Count;
         }
 
+        /// <summary>
+        /// Calculates the number of hidden cards in the dealer's hand.
+        /// </summary>
+        /// <returns>The number of dealer cards not visible to the player.</returns>
         public int HiddenDealerCards()
         {
             return dealerHand.Count - LookAtDealerHand().Count;
         }
 
+        /// <summary>
+        /// Returns the number of cards currently in the shoe.
+        /// </summary>
+        /// <returns>The number of cards in the card shoe.</returns>
         public int ShoeCount()
         {
             return cardShoe.Count;
         }
 
+        /// <summary>
+        /// Calculates and returns the total value of the dealer's hand.
+        /// </summary>
+        /// <returns>The total integer value of the dealer's hand.</returns>
         public int DealerHandValue()
         {
             return HandValue(LookAtDealerHand());

@@ -5,7 +5,8 @@
       "src": [
         {
           "files": [
-            "208_Group_Project_Demo.csproj"
+            "208_Group_Project_Demo.csproj",
+            "Blackjack_Class_Library.csproj"
           ]
         }
       ],
