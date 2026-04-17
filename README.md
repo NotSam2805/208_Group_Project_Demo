@@ -1,6 +1,6 @@
 Demo code for CA1
 
-See documentation html [here](_site/api/_208_Group_Project_Demo.html)
+See documentation html [here](_site/api/Blackjack_Class_Library.html)
 *(or pdf [here](_site/api/toc.pdf))*
 
 

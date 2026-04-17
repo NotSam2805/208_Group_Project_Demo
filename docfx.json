@@ -4,9 +4,9 @@
     {
       "src": [
         {
+          "src": "../208_Group_Project_Demo/Blackjack_Class_Library",
           "files": [
-            "208_Group_Project_Demo.csproj",
-            "Blackjack_Class_Library.csproj"
+            "**/*.csproj"
           ]
         }
       ],
@@ -15,9 +15,14 @@
   ],
   "build": {
     "content": [
-      { "files": ["api/**.yml"] },
-      { "files": ["articles/**.md"] },
-      { "files": ["index.md"] }
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
     ],
     "resource": [
       {
@@ -32,8 +37,8 @@
       "modern"
     ],
     "globalMetadata": {
-      "_appName": "",
-      "_appTitle": "",
+      "_appName": "doc",
+      "_appTitle": "doc",
       "_enableSearch": true,
       "pdf": true
     }

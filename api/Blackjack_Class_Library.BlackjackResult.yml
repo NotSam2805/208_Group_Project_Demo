@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: Blackjack_Class_Library.BlackjackResult
+  commentId: T:Blackjack_Class_Library.BlackjackResult
+  id: BlackjackResult
+  parent: Blackjack_Class_Library
+  children:
+  - Blackjack_Class_Library.BlackjackResult.BothNatural
+  - Blackjack_Class_Library.BlackjackResult.DealerBust
+  - Blackjack_Class_Library.BlackjackResult.DealerNatural
+  - Blackjack_Class_Library.BlackjackResult.DealerWins
+  - Blackjack_Class_Library.BlackjackResult.PlayerBust
+  - Blackjack_Class_Library.BlackjackResult.PlayerNatural
+  - Blackjack_Class_Library.BlackjackResult.PlayerWins
+  - Blackjack_Class_Library.BlackjackResult.StandOff
+  langs:
+  - csharp
+  - vb
+  name: BlackjackResult
+  nameWithType: BlackjackResult
+  fullName: Blackjack_Class_Library.BlackjackResult
+  type: Enum
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: BlackjackResult
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 9
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public enum BlackjackResult
+    content.vb: Public Enum BlackjackResult
+- uid: Blackjack_Class_Library.BlackjackResult.PlayerNatural
+  commentId: F:Blackjack_Class_Library.BlackjackResult.PlayerNatural
+  id: PlayerNatural
+  parent: Blackjack_Class_Library.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: PlayerNatural
+  nameWithType: BlackjackResult.PlayerNatural
+  fullName: Blackjack_Class_Library.BlackjackResult.PlayerNatural
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayerNatural
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 11
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: PlayerNatural = 0
+    return:
+      type: Blackjack_Class_Library.BlackjackResult
+- uid: Blackjack_Class_Library.BlackjackResult.DealerNatural
+  commentId: F:Blackjack_Class_Library.BlackjackResult.DealerNatural
+  id: DealerNatural
+  parent: Blackjack_Class_Library.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: DealerNatural
+  nameWithType: BlackjackResult.DealerNatural
+  fullName: Blackjack_Class_Library.BlackjackResult.DealerNatural
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerNatural
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 12
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: DealerNatural = 1
+    return:
+      type: Blackjack_Class_Library.BlackjackResult
+- uid: Blackjack_Class_Library.BlackjackResult.BothNatural
+  commentId: F:Blackjack_Class_Library.BlackjackResult.BothNatural
+  id: BothNatural
+  parent: Blackjack_Class_Library.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: BothNatural
+  nameWithType: BlackjackResult.BothNatural
+  fullName: Blackjack_Class_Library.BlackjackResult.BothNatural
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: BothNatural
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 13
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: BothNatural = 2
+    return:
+      type: Blackjack_Class_Library.BlackjackResult
+- uid: Blackjack_Class_Library.BlackjackResult.PlayerBust
+  commentId: F:Blackjack_Class_Library.BlackjackResult.PlayerBust
+  id: PlayerBust
+  parent: Blackjack_Class_Library.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: PlayerBust
+  nameWithType: BlackjackResult.PlayerBust
+  fullName: Blackjack_Class_Library.BlackjackResult.PlayerBust
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayerBust
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 14
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: PlayerBust = 3
+    return:
+      type: Blackjack_Class_Library.BlackjackResult
+- uid: Blackjack_Class_Library.BlackjackResult.DealerBust
+  commentId: F:Blackjack_Class_Library.BlackjackResult.DealerBust
+  id: DealerBust
+  parent: Blackjack_Class_Library.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: DealerBust
+  nameWithType: BlackjackResult.DealerBust
+  fullName: Blackjack_Class_Library.BlackjackResult.DealerBust
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerBust
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 15
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: DealerBust = 4
+    return:
+      type: Blackjack_Class_Library.BlackjackResult
+- uid: Blackjack_Class_Library.BlackjackResult.DealerWins
+  commentId: F:Blackjack_Class_Library.BlackjackResult.DealerWins
+  id: DealerWins
+  parent: Blackjack_Class_Library.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: DealerWins
+  nameWithType: BlackjackResult.DealerWins
+  fullName: Blackjack_Class_Library.BlackjackResult.DealerWins
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerWins
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 16
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: DealerWins = 5
+    return:
+      type: Blackjack_Class_Library.BlackjackResult
+- uid: Blackjack_Class_Library.BlackjackResult.PlayerWins
+  commentId: F:Blackjack_Class_Library.BlackjackResult.PlayerWins
+  id: PlayerWins
+  parent: Blackjack_Class_Library.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: PlayerWins
+  nameWithType: BlackjackResult.PlayerWins
+  fullName: Blackjack_Class_Library.BlackjackResult.PlayerWins
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayerWins
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 17
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: PlayerWins = 6
+    return:
+      type: Blackjack_Class_Library.BlackjackResult
+- uid: Blackjack_Class_Library.BlackjackResult.StandOff
+  commentId: F:Blackjack_Class_Library.BlackjackResult.StandOff
+  id: StandOff
+  parent: Blackjack_Class_Library.BlackjackResult
+  langs:
+  - csharp
+  - vb
+  name: StandOff
+  nameWithType: BlackjackResult.StandOff
+  fullName: Blackjack_Class_Library.BlackjackResult.StandOff
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: StandOff
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 18
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: StandOff = 7
+    return:
+      type: Blackjack_Class_Library.BlackjackResult
+references:
+- uid: Blackjack_Class_Library
+  commentId: N:Blackjack_Class_Library
+  href: Blackjack_Class_Library.html
+  name: Blackjack_Class_Library
+  nameWithType: Blackjack_Class_Library
+  fullName: Blackjack_Class_Library
+- uid: Blackjack_Class_Library.BlackjackResult
+  commentId: T:Blackjack_Class_Library.BlackjackResult
+  parent: Blackjack_Class_Library
+  href: Blackjack_Class_Library.BlackjackResult.html
+  name: BlackjackResult
+  nameWithType: BlackjackResult
+  fullName: Blackjack_Class_Library.BlackjackResult

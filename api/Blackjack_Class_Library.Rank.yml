@@ -1,0 +1,393 @@
+### YamlMime:ManagedReference
+items:
+- uid: Blackjack_Class_Library.Rank
+  commentId: T:Blackjack_Class_Library.Rank
+  id: Rank
+  parent: Blackjack_Class_Library
+  children:
+  - Blackjack_Class_Library.Rank.Ace
+  - Blackjack_Class_Library.Rank.Eight
+  - Blackjack_Class_Library.Rank.Five
+  - Blackjack_Class_Library.Rank.Four
+  - Blackjack_Class_Library.Rank.Jack
+  - Blackjack_Class_Library.Rank.King
+  - Blackjack_Class_Library.Rank.Nine
+  - Blackjack_Class_Library.Rank.Queen
+  - Blackjack_Class_Library.Rank.Seven
+  - Blackjack_Class_Library.Rank.Six
+  - Blackjack_Class_Library.Rank.Ten
+  - Blackjack_Class_Library.Rank.Three
+  - Blackjack_Class_Library.Rank.Two
+  langs:
+  - csharp
+  - vb
+  name: Rank
+  nameWithType: Rank
+  fullName: Blackjack_Class_Library.Rank
+  type: Enum
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Rank
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 16
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public enum Rank
+    content.vb: Public Enum Rank
+- uid: Blackjack_Class_Library.Rank.Ace
+  commentId: F:Blackjack_Class_Library.Rank.Ace
+  id: Ace
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Ace
+  nameWithType: Rank.Ace
+  fullName: Blackjack_Class_Library.Rank.Ace
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Ace
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 18
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Ace = 0
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Two
+  commentId: F:Blackjack_Class_Library.Rank.Two
+  id: Two
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: Rank.Two
+  fullName: Blackjack_Class_Library.Rank.Two
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Two
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 19
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Two = 1
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Three
+  commentId: F:Blackjack_Class_Library.Rank.Three
+  id: Three
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Three
+  nameWithType: Rank.Three
+  fullName: Blackjack_Class_Library.Rank.Three
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Three
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 20
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Three = 2
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Four
+  commentId: F:Blackjack_Class_Library.Rank.Four
+  id: Four
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Four
+  nameWithType: Rank.Four
+  fullName: Blackjack_Class_Library.Rank.Four
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Four
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 21
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Four = 3
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Five
+  commentId: F:Blackjack_Class_Library.Rank.Five
+  id: Five
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Five
+  nameWithType: Rank.Five
+  fullName: Blackjack_Class_Library.Rank.Five
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Five
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 22
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Five = 4
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Six
+  commentId: F:Blackjack_Class_Library.Rank.Six
+  id: Six
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Six
+  nameWithType: Rank.Six
+  fullName: Blackjack_Class_Library.Rank.Six
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Six
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 23
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Six = 5
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Seven
+  commentId: F:Blackjack_Class_Library.Rank.Seven
+  id: Seven
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Seven
+  nameWithType: Rank.Seven
+  fullName: Blackjack_Class_Library.Rank.Seven
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Seven
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 24
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Seven = 6
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Eight
+  commentId: F:Blackjack_Class_Library.Rank.Eight
+  id: Eight
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Eight
+  nameWithType: Rank.Eight
+  fullName: Blackjack_Class_Library.Rank.Eight
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Eight
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 25
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Eight = 7
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Nine
+  commentId: F:Blackjack_Class_Library.Rank.Nine
+  id: Nine
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Nine
+  nameWithType: Rank.Nine
+  fullName: Blackjack_Class_Library.Rank.Nine
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Nine
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 26
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Nine = 8
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Ten
+  commentId: F:Blackjack_Class_Library.Rank.Ten
+  id: Ten
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Ten
+  nameWithType: Rank.Ten
+  fullName: Blackjack_Class_Library.Rank.Ten
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Ten
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 27
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Ten = 9
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Jack
+  commentId: F:Blackjack_Class_Library.Rank.Jack
+  id: Jack
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Jack
+  nameWithType: Rank.Jack
+  fullName: Blackjack_Class_Library.Rank.Jack
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Jack
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 28
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Jack = 10
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.King
+  commentId: F:Blackjack_Class_Library.Rank.King
+  id: King
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: King
+  nameWithType: Rank.King
+  fullName: Blackjack_Class_Library.Rank.King
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: King
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 29
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: King = 11
+    return:
+      type: Blackjack_Class_Library.Rank
+- uid: Blackjack_Class_Library.Rank.Queen
+  commentId: F:Blackjack_Class_Library.Rank.Queen
+  id: Queen
+  parent: Blackjack_Class_Library.Rank
+  langs:
+  - csharp
+  - vb
+  name: Queen
+  nameWithType: Rank.Queen
+  fullName: Blackjack_Class_Library.Rank.Queen
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Queen
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 30
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Queen = 12
+    return:
+      type: Blackjack_Class_Library.Rank
+references:
+- uid: Blackjack_Class_Library
+  commentId: N:Blackjack_Class_Library
+  href: Blackjack_Class_Library.html
+  name: Blackjack_Class_Library
+  nameWithType: Blackjack_Class_Library
+  fullName: Blackjack_Class_Library
+- uid: Blackjack_Class_Library.Rank
+  commentId: T:Blackjack_Class_Library.Rank
+  parent: Blackjack_Class_Library
+  href: Blackjack_Class_Library.Rank.html
+  name: Rank
+  nameWithType: Rank
+  fullName: Blackjack_Class_Library.Rank

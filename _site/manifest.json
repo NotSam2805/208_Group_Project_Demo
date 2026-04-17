@@ -1,4 +1,215 @@
 {
   "source_base_path": "C:/Programming/208_Group_Project_Demo",
-  "files": []
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Blackjack_Class_Library/bin/Debug/net8.0/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "Blackjack_Class_Library/bin/Debug/net8.0/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Blackjack_Class_Library/bin/Debug/net8.0/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "Blackjack_Class_Library/bin/Debug/net8.0/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Blackjack_Class_Library/bin/Debug/net8.0/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Blackjack_Class_Library/bin/Debug/net8.0/toc.html"
+        },
+        ".json": {
+          "relative_path": "Blackjack_Class_Library/bin/Debug/net8.0/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blackjack_Class_Library.Blackjack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blackjack_Class_Library.Blackjack.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Blackjack_Class_Library.Blackjack",
+      "Summary": "<p sourcefile=\"api/Blackjack_Class_Library.Blackjack.yml\" sourcestartlinenumber=\"1\">Represents a game of Blackjack, managing the state, player and dealer hands, betting, and game logic.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blackjack_Class_Library.BlackjackAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blackjack_Class_Library.BlackjackAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Blackjack_Class_Library.BlackjackAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blackjack_Class_Library.BlackjackResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blackjack_Class_Library.BlackjackResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Blackjack_Class_Library.BlackjackResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blackjack_Class_Library.BlackjackState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blackjack_Class_Library.BlackjackState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Blackjack_Class_Library.BlackjackState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blackjack_Class_Library.Card.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blackjack_Class_Library.Card.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Blackjack_Class_Library.Card",
+      "Summary": "<p sourcefile=\"api/Blackjack_Class_Library.Card.yml\" sourcestartlinenumber=\"1\">Represents a playing card with a suit, rank, value, and identifier, and provides methods for creating and\nshuffling a standard deck.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blackjack_Class_Library.CardCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blackjack_Class_Library.CardCounter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Blackjack_Class_Library.CardCounter",
+      "Summary": "<p sourcefile=\"api/Blackjack_Class_Library.CardCounter.yml\" sourcestartlinenumber=\"1\">Provides card counting functionality for a Blackjack game, maintaining running and true counts based on cards\ndealt to the player and dealer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blackjack_Class_Library.FrontEnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blackjack_Class_Library.FrontEnd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Blackjack_Class_Library.FrontEnd",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blackjack_Class_Library.Rank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blackjack_Class_Library.Rank.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Blackjack_Class_Library.Rank",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blackjack_Class_Library.Suit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blackjack_Class_Library.Suit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Blackjack_Class_Library.Suit",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Blackjack_Class_Library.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Blackjack_Class_Library.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Blackjack_Class_Library",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
 }

@@ -1,0 +1,509 @@
+### YamlMime:ManagedReference
+items:
+- uid: Blackjack_Class_Library.CardCounter
+  commentId: T:Blackjack_Class_Library.CardCounter
+  id: CardCounter
+  parent: Blackjack_Class_Library
+  children:
+  - Blackjack_Class_Library.CardCounter.#ctor(Blackjack_Class_Library.Blackjack)
+  - Blackjack_Class_Library.CardCounter.GetRunningCount
+  - Blackjack_Class_Library.CardCounter.GetTrueCount
+  - Blackjack_Class_Library.CardCounter.decksLeft
+  - Blackjack_Class_Library.CardCounter.game
+  langs:
+  - csharp
+  - vb
+  name: CardCounter
+  nameWithType: CardCounter
+  fullName: Blackjack_Class_Library.CardCounter
+  type: Class
+  source:
+    remote:
+      path: Blackjack_Class_Library/CardCounter.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: CardCounter
+    path: Blackjack_Class_Library/CardCounter.cs
+    startLine: 13
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: >-
+    Provides card counting functionality for a Blackjack game, maintaining running and true counts based on cards
+
+    dealt to the player and dealer.
+  example: []
+  syntax:
+    content: public class CardCounter
+    content.vb: Public Class CardCounter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Blackjack_Class_Library.CardCounter.game
+  commentId: F:Blackjack_Class_Library.CardCounter.game
+  id: game
+  parent: Blackjack_Class_Library.CardCounter
+  langs:
+  - csharp
+  - vb
+  name: game
+  nameWithType: CardCounter.game
+  fullName: Blackjack_Class_Library.CardCounter.game
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/CardCounter.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: game
+    path: Blackjack_Class_Library/CardCounter.cs
+    startLine: 18
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Represents the current Blackjack game instance.
+  example: []
+  syntax:
+    content: public Blackjack game
+    return:
+      type: Blackjack_Class_Library.Blackjack
+    content.vb: Public game As Blackjack
+- uid: Blackjack_Class_Library.CardCounter.decksLeft
+  commentId: P:Blackjack_Class_Library.CardCounter.decksLeft
+  id: decksLeft
+  parent: Blackjack_Class_Library.CardCounter
+  langs:
+  - csharp
+  - vb
+  name: decksLeft
+  nameWithType: CardCounter.decksLeft
+  fullName: Blackjack_Class_Library.CardCounter.decksLeft
+  type: Property
+  source:
+    remote:
+      path: Blackjack_Class_Library/CardCounter.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: decksLeft
+    path: Blackjack_Class_Library/CardCounter.cs
+    startLine: 30
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public double decksLeft { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property decksLeft As Double
+  overload: Blackjack_Class_Library.CardCounter.decksLeft*
+- uid: Blackjack_Class_Library.CardCounter.#ctor(Blackjack_Class_Library.Blackjack)
+  commentId: M:Blackjack_Class_Library.CardCounter.#ctor(Blackjack_Class_Library.Blackjack)
+  id: '#ctor(Blackjack_Class_Library.Blackjack)'
+  parent: Blackjack_Class_Library.CardCounter
+  langs:
+  - csharp
+  - vb
+  name: CardCounter(Blackjack)
+  nameWithType: CardCounter.CardCounter(Blackjack)
+  fullName: Blackjack_Class_Library.CardCounter.CardCounter(Blackjack_Class_Library.Blackjack)
+  type: Constructor
+  source:
+    remote:
+      path: Blackjack_Class_Library/CardCounter.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: .ctor
+    path: Blackjack_Class_Library/CardCounter.cs
+    startLine: 44
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Initializes a new instance of the CardCounter class with the specified Blackjack game.
+  example: []
+  syntax:
+    content: public CardCounter(Blackjack _game)
+    parameters:
+    - id: _game
+      type: Blackjack_Class_Library.Blackjack
+      description: The Blackjack game instance to associate with the card counter.
+    content.vb: Public Sub New(_game As Blackjack)
+  overload: Blackjack_Class_Library.CardCounter.#ctor*
+  nameWithType.vb: CardCounter.New(Blackjack)
+  fullName.vb: Blackjack_Class_Library.CardCounter.New(Blackjack_Class_Library.Blackjack)
+  name.vb: New(Blackjack)
+- uid: Blackjack_Class_Library.CardCounter.GetRunningCount
+  commentId: M:Blackjack_Class_Library.CardCounter.GetRunningCount
+  id: GetRunningCount
+  parent: Blackjack_Class_Library.CardCounter
+  langs:
+  - csharp
+  - vb
+  name: GetRunningCount()
+  nameWithType: CardCounter.GetRunningCount()
+  fullName: Blackjack_Class_Library.CardCounter.GetRunningCount()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/CardCounter.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: GetRunningCount
+    path: Blackjack_Class_Library/CardCounter.cs
+    startLine: 61
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: >-
+    Calculates and returns the current running count based on the cards dealt to the player and dealer,
+
+    resetting the count if the card shoe has been refilled.
+  example: []
+  syntax:
+    content: public int GetRunningCount()
+    return:
+      type: System.Int32
+      description: The current running count after processing new cards.
+    content.vb: Public Function GetRunningCount() As Integer
+  overload: Blackjack_Class_Library.CardCounter.GetRunningCount*
+- uid: Blackjack_Class_Library.CardCounter.GetTrueCount
+  commentId: M:Blackjack_Class_Library.CardCounter.GetTrueCount
+  id: GetTrueCount
+  parent: Blackjack_Class_Library.CardCounter
+  langs:
+  - csharp
+  - vb
+  name: GetTrueCount()
+  nameWithType: CardCounter.GetTrueCount()
+  fullName: Blackjack_Class_Library.CardCounter.GetTrueCount()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/CardCounter.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: GetTrueCount
+    path: Blackjack_Class_Library/CardCounter.cs
+    startLine: 105
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: >-
+    Calculates and returns the true count by dividing the running count by the number of decks remaining in the
+
+    shoe.
+  example: []
+  syntax:
+    content: public double GetTrueCount()
+    return:
+      type: System.Double
+      description: The current true count as an integer.
+    content.vb: Public Function GetTrueCount() As Double
+  overload: Blackjack_Class_Library.CardCounter.GetTrueCount*
+references:
+- uid: Blackjack_Class_Library
+  commentId: N:Blackjack_Class_Library
+  href: Blackjack_Class_Library.html
+  name: Blackjack_Class_Library
+  nameWithType: Blackjack_Class_Library
+  fullName: Blackjack_Class_Library
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Blackjack_Class_Library.Blackjack
+  commentId: T:Blackjack_Class_Library.Blackjack
+  parent: Blackjack_Class_Library
+  href: Blackjack_Class_Library.Blackjack.html
+  name: Blackjack
+  nameWithType: Blackjack
+  fullName: Blackjack_Class_Library.Blackjack
+- uid: Blackjack_Class_Library.CardCounter.decksLeft*
+  commentId: Overload:Blackjack_Class_Library.CardCounter.decksLeft
+  href: Blackjack_Class_Library.CardCounter.html#Blackjack_Class_Library_CardCounter_decksLeft
+  name: decksLeft
+  nameWithType: CardCounter.decksLeft
+  fullName: Blackjack_Class_Library.CardCounter.decksLeft
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Blackjack_Class_Library.CardCounter.#ctor*
+  commentId: Overload:Blackjack_Class_Library.CardCounter.#ctor
+  href: Blackjack_Class_Library.CardCounter.html#Blackjack_Class_Library_CardCounter__ctor_Blackjack_Class_Library_Blackjack_
+  name: CardCounter
+  nameWithType: CardCounter.CardCounter
+  fullName: Blackjack_Class_Library.CardCounter.CardCounter
+  nameWithType.vb: CardCounter.New
+  fullName.vb: Blackjack_Class_Library.CardCounter.New
+  name.vb: New
+- uid: Blackjack_Class_Library.CardCounter.GetRunningCount*
+  commentId: Overload:Blackjack_Class_Library.CardCounter.GetRunningCount
+  href: Blackjack_Class_Library.CardCounter.html#Blackjack_Class_Library_CardCounter_GetRunningCount
+  name: GetRunningCount
+  nameWithType: CardCounter.GetRunningCount
+  fullName: Blackjack_Class_Library.CardCounter.GetRunningCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Blackjack_Class_Library.CardCounter.GetTrueCount*
+  commentId: Overload:Blackjack_Class_Library.CardCounter.GetTrueCount
+  href: Blackjack_Class_Library.CardCounter.html#Blackjack_Class_Library_CardCounter_GetTrueCount
+  name: GetTrueCount
+  nameWithType: CardCounter.GetTrueCount
+  fullName: Blackjack_Class_Library.CardCounter.GetTrueCount

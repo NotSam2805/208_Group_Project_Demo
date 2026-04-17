@@ -1,0 +1,1336 @@
+### YamlMime:ManagedReference
+items:
+- uid: Blackjack_Class_Library.Blackjack
+  commentId: T:Blackjack_Class_Library.Blackjack
+  id: Blackjack
+  parent: Blackjack_Class_Library
+  children:
+  - Blackjack_Class_Library.Blackjack.#ctor
+  - Blackjack_Class_Library.Blackjack.CanDoubleDown
+  - Blackjack_Class_Library.Blackjack.DealCards(System.Collections.Generic.List{Blackjack_Class_Library.Card},System.Int32)
+  - Blackjack_Class_Library.Blackjack.DealerHandSize
+  - Blackjack_Class_Library.Blackjack.DealerHandValue
+  - Blackjack_Class_Library.Blackjack.DealerTurn
+  - Blackjack_Class_Library.Blackjack.EndGame
+  - Blackjack_Class_Library.Blackjack.HandToString(System.Collections.Generic.List{Blackjack_Class_Library.Card})
+  - Blackjack_Class_Library.Blackjack.HandValue(System.Collections.Generic.List{Blackjack_Class_Library.Card})
+  - Blackjack_Class_Library.Blackjack.HiddenDealerCards
+  - Blackjack_Class_Library.Blackjack.LookAtDealerHand
+  - Blackjack_Class_Library.Blackjack.PlaceBet(System.Double)
+  - Blackjack_Class_Library.Blackjack.PlayerTurn(Blackjack_Class_Library.BlackjackAction)
+  - Blackjack_Class_Library.Blackjack.ShoeCount
+  - Blackjack_Class_Library.Blackjack.ShowPlayerCredit
+  - Blackjack_Class_Library.Blackjack.StartBlackjack
+  - Blackjack_Class_Library.Blackjack.currentState
+  - Blackjack_Class_Library.Blackjack.playerBet
+  - Blackjack_Class_Library.Blackjack.playerCredit
+  - Blackjack_Class_Library.Blackjack.playerHand
+  - Blackjack_Class_Library.Blackjack.playerValue
+  langs:
+  - csharp
+  - vb
+  name: Blackjack
+  nameWithType: Blackjack
+  fullName: Blackjack_Class_Library.Blackjack
+  type: Class
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Blackjack
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 39
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Represents a game of Blackjack, managing the state, player and dealer hands, betting, and game logic.
+  example: []
+  syntax:
+    content: public class Blackjack
+    content.vb: Public Class Blackjack
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Blackjack_Class_Library.Blackjack.playerHand
+  commentId: P:Blackjack_Class_Library.Blackjack.playerHand
+  id: playerHand
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: playerHand
+  nameWithType: Blackjack.playerHand
+  fullName: Blackjack_Class_Library.Blackjack.playerHand
+  type: Property
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: playerHand
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 48
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public List<Card> playerHand { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Blackjack_Class_Library.Card}
+    content.vb: Public Property playerHand As List(Of Card)
+  overload: Blackjack_Class_Library.Blackjack.playerHand*
+- uid: Blackjack_Class_Library.Blackjack.playerValue
+  commentId: P:Blackjack_Class_Library.Blackjack.playerValue
+  id: playerValue
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: playerValue
+  nameWithType: Blackjack.playerValue
+  fullName: Blackjack_Class_Library.Blackjack.playerValue
+  type: Property
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: playerValue
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 49
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public int playerValue { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property playerValue As Integer
+  overload: Blackjack_Class_Library.Blackjack.playerValue*
+- uid: Blackjack_Class_Library.Blackjack.playerBet
+  commentId: P:Blackjack_Class_Library.Blackjack.playerBet
+  id: playerBet
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: playerBet
+  nameWithType: Blackjack.playerBet
+  fullName: Blackjack_Class_Library.Blackjack.playerBet
+  type: Property
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: playerBet
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 52
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public double? playerBet { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property playerBet As Double?
+  overload: Blackjack_Class_Library.Blackjack.playerBet*
+- uid: Blackjack_Class_Library.Blackjack.playerCredit
+  commentId: P:Blackjack_Class_Library.Blackjack.playerCredit
+  id: playerCredit
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: playerCredit
+  nameWithType: Blackjack.playerCredit
+  fullName: Blackjack_Class_Library.Blackjack.playerCredit
+  type: Property
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: playerCredit
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 53
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public double playerCredit { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property playerCredit As Double
+  overload: Blackjack_Class_Library.Blackjack.playerCredit*
+- uid: Blackjack_Class_Library.Blackjack.currentState
+  commentId: P:Blackjack_Class_Library.Blackjack.currentState
+  id: currentState
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: currentState
+  nameWithType: Blackjack.currentState
+  fullName: Blackjack_Class_Library.Blackjack.currentState
+  type: Property
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: currentState
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 60
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public BlackjackState currentState { get; }
+    parameters: []
+    return:
+      type: Blackjack_Class_Library.BlackjackState
+    content.vb: Public Property currentState As BlackjackState
+  overload: Blackjack_Class_Library.Blackjack.currentState*
+- uid: Blackjack_Class_Library.Blackjack.#ctor
+  commentId: M:Blackjack_Class_Library.Blackjack.#ctor
+  id: '#ctor'
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: Blackjack()
+  nameWithType: Blackjack.Blackjack()
+  fullName: Blackjack_Class_Library.Blackjack.Blackjack()
+  type: Constructor
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: .ctor
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 66
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: >-
+    Initializes a new instance of the Blackjack class, setting up the card shoe, player and dealer hands, player
+
+    credit, bet, and game state.
+  example: []
+  syntax:
+    content: public Blackjack()
+    content.vb: Public Sub New()
+  overload: Blackjack_Class_Library.Blackjack.#ctor*
+  nameWithType.vb: Blackjack.New()
+  fullName.vb: Blackjack_Class_Library.Blackjack.New()
+  name.vb: New()
+- uid: Blackjack_Class_Library.Blackjack.DealCards(System.Collections.Generic.List{Blackjack_Class_Library.Card},System.Int32)
+  commentId: M:Blackjack_Class_Library.Blackjack.DealCards(System.Collections.Generic.List{Blackjack_Class_Library.Card},System.Int32)
+  id: DealCards(System.Collections.Generic.List{Blackjack_Class_Library.Card},System.Int32)
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: DealCards(List<Card>, int)
+  nameWithType: Blackjack.DealCards(List<Card>, int)
+  fullName: Blackjack_Class_Library.Blackjack.DealCards(System.Collections.Generic.List<Blackjack_Class_Library.Card>, int)
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealCards
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 113
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Deals n cards to either the player or the dealer, specified with toPlayer
+  example: []
+  syntax:
+    content: public List<Card> DealCards(List<Card> toHand, int n = 1)
+    parameters:
+    - id: toHand
+      type: System.Collections.Generic.List{Blackjack_Class_Library.Card}
+      description: The hand the cards are dealt to
+    - id: n
+      type: System.Int32
+      description: The number of cards to deal
+    return:
+      type: System.Collections.Generic.List{Blackjack_Class_Library.Card}
+      description: The hand with cards dealt to it
+    content.vb: Public Function DealCards(toHand As List(Of Card), n As Integer = 1) As List(Of Card)
+  overload: Blackjack_Class_Library.Blackjack.DealCards*
+  nameWithType.vb: Blackjack.DealCards(List(Of Card), Integer)
+  fullName.vb: Blackjack_Class_Library.Blackjack.DealCards(System.Collections.Generic.List(Of Blackjack_Class_Library.Card), Integer)
+  name.vb: DealCards(List(Of Card), Integer)
+- uid: Blackjack_Class_Library.Blackjack.PlaceBet(System.Double)
+  commentId: M:Blackjack_Class_Library.Blackjack.PlaceBet(System.Double)
+  id: PlaceBet(System.Double)
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: PlaceBet(double)
+  nameWithType: Blackjack.PlaceBet(double)
+  fullName: Blackjack_Class_Library.Blackjack.PlaceBet(double)
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlaceBet
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 129
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Places a bet for the player if sufficient credit is available and no game is in progress.
+  example: []
+  syntax:
+    content: public void PlaceBet(double bet)
+    parameters:
+    - id: bet
+      type: System.Double
+      description: The amount to bet.
+    content.vb: Public Sub PlaceBet(bet As Double)
+  overload: Blackjack_Class_Library.Blackjack.PlaceBet*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Thrown if the bet exceeds available credit, a game is in progress, or the bet amount is zero or negative.
+  nameWithType.vb: Blackjack.PlaceBet(Double)
+  fullName.vb: Blackjack_Class_Library.Blackjack.PlaceBet(Double)
+  name.vb: PlaceBet(Double)
+- uid: Blackjack_Class_Library.Blackjack.ShowPlayerCredit
+  commentId: M:Blackjack_Class_Library.Blackjack.ShowPlayerCredit
+  id: ShowPlayerCredit
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: ShowPlayerCredit()
+  nameWithType: Blackjack.ShowPlayerCredit()
+  fullName: Blackjack_Class_Library.Blackjack.ShowPlayerCredit()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: ShowPlayerCredit
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 154
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public void ShowPlayerCredit()
+    content.vb: Public Sub ShowPlayerCredit()
+  overload: Blackjack_Class_Library.Blackjack.ShowPlayerCredit*
+- uid: Blackjack_Class_Library.Blackjack.StartBlackjack
+  commentId: M:Blackjack_Class_Library.Blackjack.StartBlackjack
+  id: StartBlackjack
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: StartBlackjack()
+  nameWithType: Blackjack.StartBlackjack()
+  fullName: Blackjack_Class_Library.Blackjack.StartBlackjack()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: StartBlackjack
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 167
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: >-
+    Initializes and starts a new game of blackjack, dealing cards to the player and dealer and updating the game
+
+    state.
+  example: []
+  syntax:
+    content: public void StartBlackjack()
+    content.vb: Public Sub StartBlackjack()
+  overload: Blackjack_Class_Library.Blackjack.StartBlackjack*
+- uid: Blackjack_Class_Library.Blackjack.CanDoubleDown
+  commentId: M:Blackjack_Class_Library.Blackjack.CanDoubleDown
+  id: CanDoubleDown
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: CanDoubleDown()
+  nameWithType: Blackjack.CanDoubleDown()
+  fullName: Blackjack_Class_Library.Blackjack.CanDoubleDown()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: CanDoubleDown
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 211
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: >-
+    Determines whether the player is eligible to double down based on the current game state, hand size, and bet
+
+    status.
+  example: []
+  syntax:
+    content: public bool CanDoubleDown()
+    return:
+      type: System.Boolean
+      description: true if the player can double down; otherwise, false.
+    content.vb: Public Function CanDoubleDown() As Boolean
+  overload: Blackjack_Class_Library.Blackjack.CanDoubleDown*
+- uid: Blackjack_Class_Library.Blackjack.PlayerTurn(Blackjack_Class_Library.BlackjackAction)
+  commentId: M:Blackjack_Class_Library.Blackjack.PlayerTurn(Blackjack_Class_Library.BlackjackAction)
+  id: PlayerTurn(Blackjack_Class_Library.BlackjackAction)
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: PlayerTurn(BlackjackAction)
+  nameWithType: Blackjack.PlayerTurn(BlackjackAction)
+  fullName: Blackjack_Class_Library.Blackjack.PlayerTurn(Blackjack_Class_Library.BlackjackAction)
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayerTurn
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 220
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Processes the player's action during their turn in a game of Blackjack.
+  example: []
+  syntax:
+    content: public void PlayerTurn(BlackjackAction playerAction)
+    parameters:
+    - id: playerAction
+      type: Blackjack_Class_Library.BlackjackAction
+      description: The action chosen by the player, such as Hit or Stand.
+    content.vb: Public Sub PlayerTurn(playerAction As BlackjackAction)
+  overload: Blackjack_Class_Library.Blackjack.PlayerTurn*
+- uid: Blackjack_Class_Library.Blackjack.DealerTurn
+  commentId: M:Blackjack_Class_Library.Blackjack.DealerTurn
+  id: DealerTurn
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: DealerTurn()
+  nameWithType: Blackjack.DealerTurn()
+  fullName: Blackjack_Class_Library.Blackjack.DealerTurn()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerTurn
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 296
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: >-
+    Executes the dealer's turn in the Blackjack game, updating the dealer's hand and game state according to
+
+    standard rules.
+  example: []
+  syntax:
+    content: public void DealerTurn()
+    content.vb: Public Sub DealerTurn()
+  overload: Blackjack_Class_Library.Blackjack.DealerTurn*
+- uid: Blackjack_Class_Library.Blackjack.EndGame
+  commentId: M:Blackjack_Class_Library.Blackjack.EndGame
+  id: EndGame
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: EndGame()
+  nameWithType: Blackjack.EndGame()
+  fullName: Blackjack_Class_Library.Blackjack.EndGame()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: EndGame
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 330
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: >-
+    Ends the current blackjack game, determines the outcome based on player and dealer hands, and outputs the
+
+    result.
+  example: []
+  syntax:
+    content: public BlackjackResult EndGame()
+    return:
+      type: Blackjack_Class_Library.BlackjackResult
+      description: A BlackjackResult value indicating the outcome of the game.
+    content.vb: Public Function EndGame() As BlackjackResult
+  overload: Blackjack_Class_Library.Blackjack.EndGame*
+- uid: Blackjack_Class_Library.Blackjack.LookAtDealerHand
+  commentId: M:Blackjack_Class_Library.Blackjack.LookAtDealerHand
+  id: LookAtDealerHand
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: LookAtDealerHand()
+  nameWithType: Blackjack.LookAtDealerHand()
+  fullName: Blackjack_Class_Library.Blackjack.LookAtDealerHand()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: LookAtDealerHand
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 444
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Returns the dealer's hand, hiding the first card during the player's turn.
+  example: []
+  syntax:
+    content: public List<Card> LookAtDealerHand()
+    return:
+      type: System.Collections.Generic.List{Blackjack_Class_Library.Card}
+      description: A list of cards representing the dealer's hand, with the first card removed if it is the player's turn.
+    content.vb: Public Function LookAtDealerHand() As List(Of Card)
+  overload: Blackjack_Class_Library.Blackjack.LookAtDealerHand*
+- uid: Blackjack_Class_Library.Blackjack.DealerHandSize
+  commentId: M:Blackjack_Class_Library.Blackjack.DealerHandSize
+  id: DealerHandSize
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: DealerHandSize()
+  nameWithType: Blackjack.DealerHandSize()
+  fullName: Blackjack_Class_Library.Blackjack.DealerHandSize()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerHandSize
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 459
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Gets the number of cards in the dealer's hand.
+  example: []
+  syntax:
+    content: public int DealerHandSize()
+    return:
+      type: System.Int32
+      description: The count of cards currently held by the dealer.
+    content.vb: Public Function DealerHandSize() As Integer
+  overload: Blackjack_Class_Library.Blackjack.DealerHandSize*
+- uid: Blackjack_Class_Library.Blackjack.HiddenDealerCards
+  commentId: M:Blackjack_Class_Library.Blackjack.HiddenDealerCards
+  id: HiddenDealerCards
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: HiddenDealerCards()
+  nameWithType: Blackjack.HiddenDealerCards()
+  fullName: Blackjack_Class_Library.Blackjack.HiddenDealerCards()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: HiddenDealerCards
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 468
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Calculates the number of hidden cards in the dealer's hand.
+  example: []
+  syntax:
+    content: public int HiddenDealerCards()
+    return:
+      type: System.Int32
+      description: The number of dealer cards not visible to the player.
+    content.vb: Public Function HiddenDealerCards() As Integer
+  overload: Blackjack_Class_Library.Blackjack.HiddenDealerCards*
+- uid: Blackjack_Class_Library.Blackjack.ShoeCount
+  commentId: M:Blackjack_Class_Library.Blackjack.ShoeCount
+  id: ShoeCount
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: ShoeCount()
+  nameWithType: Blackjack.ShoeCount()
+  fullName: Blackjack_Class_Library.Blackjack.ShoeCount()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: ShoeCount
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 477
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Returns the number of cards currently in the shoe.
+  example: []
+  syntax:
+    content: public int ShoeCount()
+    return:
+      type: System.Int32
+      description: The number of cards in the card shoe.
+    content.vb: Public Function ShoeCount() As Integer
+  overload: Blackjack_Class_Library.Blackjack.ShoeCount*
+- uid: Blackjack_Class_Library.Blackjack.DealerHandValue
+  commentId: M:Blackjack_Class_Library.Blackjack.DealerHandValue
+  id: DealerHandValue
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: DealerHandValue()
+  nameWithType: Blackjack.DealerHandValue()
+  fullName: Blackjack_Class_Library.Blackjack.DealerHandValue()
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerHandValue
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 486
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Calculates and returns the total value of the dealer's hand.
+  example: []
+  syntax:
+    content: public int DealerHandValue()
+    return:
+      type: System.Int32
+      description: The total integer value of the dealer's hand.
+    content.vb: Public Function DealerHandValue() As Integer
+  overload: Blackjack_Class_Library.Blackjack.DealerHandValue*
+- uid: Blackjack_Class_Library.Blackjack.HandValue(System.Collections.Generic.List{Blackjack_Class_Library.Card})
+  commentId: M:Blackjack_Class_Library.Blackjack.HandValue(System.Collections.Generic.List{Blackjack_Class_Library.Card})
+  id: HandValue(System.Collections.Generic.List{Blackjack_Class_Library.Card})
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: HandValue(List<Card>)
+  nameWithType: Blackjack.HandValue(List<Card>)
+  fullName: Blackjack_Class_Library.Blackjack.HandValue(System.Collections.Generic.List<Blackjack_Class_Library.Card>)
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: HandValue
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 498
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: >-
+    Calculates the total value of a hand of cards, treating aces as 1 or 11 to maximize the hand's value without
+
+    exceeding 21.
+  example: []
+  syntax:
+    content: public static int HandValue(List<Card> hand)
+    parameters:
+    - id: hand
+      type: System.Collections.Generic.List{Blackjack_Class_Library.Card}
+      description: The list of cards whose value is to be calculated.
+    return:
+      type: System.Int32
+      description: The total value of the hand.
+    content.vb: Public Shared Function HandValue(hand As List(Of Card)) As Integer
+  overload: Blackjack_Class_Library.Blackjack.HandValue*
+  nameWithType.vb: Blackjack.HandValue(List(Of Card))
+  fullName.vb: Blackjack_Class_Library.Blackjack.HandValue(System.Collections.Generic.List(Of Blackjack_Class_Library.Card))
+  name.vb: HandValue(List(Of Card))
+- uid: Blackjack_Class_Library.Blackjack.HandToString(System.Collections.Generic.List{Blackjack_Class_Library.Card})
+  commentId: M:Blackjack_Class_Library.Blackjack.HandToString(System.Collections.Generic.List{Blackjack_Class_Library.Card})
+  id: HandToString(System.Collections.Generic.List{Blackjack_Class_Library.Card})
+  parent: Blackjack_Class_Library.Blackjack
+  langs:
+  - csharp
+  - vb
+  name: HandToString(List<Card>)
+  nameWithType: Blackjack.HandToString(List<Card>)
+  fullName: Blackjack_Class_Library.Blackjack.HandToString(System.Collections.Generic.List<Blackjack_Class_Library.Card>)
+  type: Method
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: HandToString
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 533
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  summary: Returns a comma-separated string of card IDs from the given hand.
+  example: []
+  syntax:
+    content: public static string HandToString(List<Card> hand)
+    parameters:
+    - id: hand
+      type: System.Collections.Generic.List{Blackjack_Class_Library.Card}
+      description: The list of Card objects representing the hand.
+    return:
+      type: System.String
+      description: A string containing the IDs of the cards in the hand, separated by commas.
+    content.vb: Public Shared Function HandToString(hand As List(Of Card)) As String
+  overload: Blackjack_Class_Library.Blackjack.HandToString*
+  nameWithType.vb: Blackjack.HandToString(List(Of Card))
+  fullName.vb: Blackjack_Class_Library.Blackjack.HandToString(System.Collections.Generic.List(Of Blackjack_Class_Library.Card))
+  name.vb: HandToString(List(Of Card))
+references:
+- uid: Blackjack_Class_Library
+  commentId: N:Blackjack_Class_Library
+  href: Blackjack_Class_Library.html
+  name: Blackjack_Class_Library
+  nameWithType: Blackjack_Class_Library
+  fullName: Blackjack_Class_Library
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Blackjack_Class_Library.Blackjack.playerHand*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.playerHand
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_playerHand
+  name: playerHand
+  nameWithType: Blackjack.playerHand
+  fullName: Blackjack_Class_Library.Blackjack.playerHand
+- uid: System.Collections.Generic.List{Blackjack_Class_Library.Card}
+  commentId: T:System.Collections.Generic.List{Blackjack_Class_Library.Card}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Card>
+  nameWithType: List<Card>
+  fullName: System.Collections.Generic.List<Blackjack_Class_Library.Card>
+  nameWithType.vb: List(Of Card)
+  fullName.vb: System.Collections.Generic.List(Of Blackjack_Class_Library.Card)
+  name.vb: List(Of Card)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Blackjack_Class_Library.Card
+    name: Card
+    href: Blackjack_Class_Library.Card.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Blackjack_Class_Library.Card
+    name: Card
+    href: Blackjack_Class_Library.Card.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Blackjack_Class_Library.Blackjack.playerValue*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.playerValue
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_playerValue
+  name: playerValue
+  nameWithType: Blackjack.playerValue
+  fullName: Blackjack_Class_Library.Blackjack.playerValue
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Blackjack_Class_Library.Blackjack.playerBet*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.playerBet
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_playerBet
+  name: playerBet
+  nameWithType: Blackjack.playerBet
+  fullName: Blackjack_Class_Library.Blackjack.playerBet
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Blackjack_Class_Library.Blackjack.playerCredit*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.playerCredit
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_playerCredit
+  name: playerCredit
+  nameWithType: Blackjack.playerCredit
+  fullName: Blackjack_Class_Library.Blackjack.playerCredit
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Blackjack_Class_Library.Blackjack.currentState*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.currentState
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_currentState
+  name: currentState
+  nameWithType: Blackjack.currentState
+  fullName: Blackjack_Class_Library.Blackjack.currentState
+- uid: Blackjack_Class_Library.BlackjackState
+  commentId: T:Blackjack_Class_Library.BlackjackState
+  parent: Blackjack_Class_Library
+  href: Blackjack_Class_Library.BlackjackState.html
+  name: BlackjackState
+  nameWithType: BlackjackState
+  fullName: Blackjack_Class_Library.BlackjackState
+- uid: Blackjack_Class_Library.Blackjack.#ctor*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.#ctor
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack__ctor
+  name: Blackjack
+  nameWithType: Blackjack.Blackjack
+  fullName: Blackjack_Class_Library.Blackjack.Blackjack
+  nameWithType.vb: Blackjack.New
+  fullName.vb: Blackjack_Class_Library.Blackjack.New
+  name.vb: New
+- uid: Blackjack_Class_Library.Blackjack.DealCards*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.DealCards
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_DealCards_System_Collections_Generic_List_Blackjack_Class_Library_Card__System_Int32_
+  name: DealCards
+  nameWithType: Blackjack.DealCards
+  fullName: Blackjack_Class_Library.Blackjack.DealCards
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Blackjack_Class_Library.Blackjack.PlaceBet*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.PlaceBet
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_PlaceBet_System_Double_
+  name: PlaceBet
+  nameWithType: Blackjack.PlaceBet
+  fullName: Blackjack_Class_Library.Blackjack.PlaceBet
+- uid: Blackjack_Class_Library.Blackjack.ShowPlayerCredit*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.ShowPlayerCredit
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_ShowPlayerCredit
+  name: ShowPlayerCredit
+  nameWithType: Blackjack.ShowPlayerCredit
+  fullName: Blackjack_Class_Library.Blackjack.ShowPlayerCredit
+- uid: Blackjack_Class_Library.Blackjack.StartBlackjack*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.StartBlackjack
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_StartBlackjack
+  name: StartBlackjack
+  nameWithType: Blackjack.StartBlackjack
+  fullName: Blackjack_Class_Library.Blackjack.StartBlackjack
+- uid: Blackjack_Class_Library.Blackjack.CanDoubleDown*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.CanDoubleDown
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_CanDoubleDown
+  name: CanDoubleDown
+  nameWithType: Blackjack.CanDoubleDown
+  fullName: Blackjack_Class_Library.Blackjack.CanDoubleDown
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Blackjack_Class_Library.Blackjack.PlayerTurn*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.PlayerTurn
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_PlayerTurn_Blackjack_Class_Library_BlackjackAction_
+  name: PlayerTurn
+  nameWithType: Blackjack.PlayerTurn
+  fullName: Blackjack_Class_Library.Blackjack.PlayerTurn
+- uid: Blackjack_Class_Library.BlackjackAction
+  commentId: T:Blackjack_Class_Library.BlackjackAction
+  parent: Blackjack_Class_Library
+  href: Blackjack_Class_Library.BlackjackAction.html
+  name: BlackjackAction
+  nameWithType: BlackjackAction
+  fullName: Blackjack_Class_Library.BlackjackAction
+- uid: Blackjack_Class_Library.Blackjack.DealerTurn*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.DealerTurn
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_DealerTurn
+  name: DealerTurn
+  nameWithType: Blackjack.DealerTurn
+  fullName: Blackjack_Class_Library.Blackjack.DealerTurn
+- uid: Blackjack_Class_Library.Blackjack.EndGame*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.EndGame
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_EndGame
+  name: EndGame
+  nameWithType: Blackjack.EndGame
+  fullName: Blackjack_Class_Library.Blackjack.EndGame
+- uid: Blackjack_Class_Library.BlackjackResult
+  commentId: T:Blackjack_Class_Library.BlackjackResult
+  parent: Blackjack_Class_Library
+  href: Blackjack_Class_Library.BlackjackResult.html
+  name: BlackjackResult
+  nameWithType: BlackjackResult
+  fullName: Blackjack_Class_Library.BlackjackResult
+- uid: Blackjack_Class_Library.Blackjack.LookAtDealerHand*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.LookAtDealerHand
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_LookAtDealerHand
+  name: LookAtDealerHand
+  nameWithType: Blackjack.LookAtDealerHand
+  fullName: Blackjack_Class_Library.Blackjack.LookAtDealerHand
+- uid: Blackjack_Class_Library.Blackjack.DealerHandSize*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.DealerHandSize
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_DealerHandSize
+  name: DealerHandSize
+  nameWithType: Blackjack.DealerHandSize
+  fullName: Blackjack_Class_Library.Blackjack.DealerHandSize
+- uid: Blackjack_Class_Library.Blackjack.HiddenDealerCards*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.HiddenDealerCards
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_HiddenDealerCards
+  name: HiddenDealerCards
+  nameWithType: Blackjack.HiddenDealerCards
+  fullName: Blackjack_Class_Library.Blackjack.HiddenDealerCards
+- uid: Blackjack_Class_Library.Blackjack.ShoeCount*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.ShoeCount
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_ShoeCount
+  name: ShoeCount
+  nameWithType: Blackjack.ShoeCount
+  fullName: Blackjack_Class_Library.Blackjack.ShoeCount
+- uid: Blackjack_Class_Library.Blackjack.DealerHandValue*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.DealerHandValue
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_DealerHandValue
+  name: DealerHandValue
+  nameWithType: Blackjack.DealerHandValue
+  fullName: Blackjack_Class_Library.Blackjack.DealerHandValue
+- uid: Blackjack_Class_Library.Blackjack.HandValue*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.HandValue
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_HandValue_System_Collections_Generic_List_Blackjack_Class_Library_Card__
+  name: HandValue
+  nameWithType: Blackjack.HandValue
+  fullName: Blackjack_Class_Library.Blackjack.HandValue
+- uid: Blackjack_Class_Library.Blackjack.HandToString*
+  commentId: Overload:Blackjack_Class_Library.Blackjack.HandToString
+  href: Blackjack_Class_Library.Blackjack.html#Blackjack_Class_Library_Blackjack_HandToString_System_Collections_Generic_List_Blackjack_Class_Library_Card__
+  name: HandToString
+  nameWithType: Blackjack.HandToString
+  fullName: Blackjack_Class_Library.Blackjack.HandToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

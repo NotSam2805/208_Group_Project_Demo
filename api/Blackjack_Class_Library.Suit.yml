@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: Blackjack_Class_Library.Suit
+  commentId: T:Blackjack_Class_Library.Suit
+  id: Suit
+  parent: Blackjack_Class_Library
+  children:
+  - Blackjack_Class_Library.Suit.Club
+  - Blackjack_Class_Library.Suit.Diamond
+  - Blackjack_Class_Library.Suit.Heart
+  - Blackjack_Class_Library.Suit.Spade
+  langs:
+  - csharp
+  - vb
+  name: Suit
+  nameWithType: Suit
+  fullName: Blackjack_Class_Library.Suit
+  type: Enum
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Suit
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 8
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public enum Suit
+    content.vb: Public Enum Suit
+- uid: Blackjack_Class_Library.Suit.Club
+  commentId: F:Blackjack_Class_Library.Suit.Club
+  id: Club
+  parent: Blackjack_Class_Library.Suit
+  langs:
+  - csharp
+  - vb
+  name: Club
+  nameWithType: Suit.Club
+  fullName: Blackjack_Class_Library.Suit.Club
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Club
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 10
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Club = 0
+    return:
+      type: Blackjack_Class_Library.Suit
+- uid: Blackjack_Class_Library.Suit.Diamond
+  commentId: F:Blackjack_Class_Library.Suit.Diamond
+  id: Diamond
+  parent: Blackjack_Class_Library.Suit
+  langs:
+  - csharp
+  - vb
+  name: Diamond
+  nameWithType: Suit.Diamond
+  fullName: Blackjack_Class_Library.Suit.Diamond
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Diamond
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 11
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Diamond = 1
+    return:
+      type: Blackjack_Class_Library.Suit
+- uid: Blackjack_Class_Library.Suit.Heart
+  commentId: F:Blackjack_Class_Library.Suit.Heart
+  id: Heart
+  parent: Blackjack_Class_Library.Suit
+  langs:
+  - csharp
+  - vb
+  name: Heart
+  nameWithType: Suit.Heart
+  fullName: Blackjack_Class_Library.Suit.Heart
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Heart
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 12
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Heart = 2
+    return:
+      type: Blackjack_Class_Library.Suit
+- uid: Blackjack_Class_Library.Suit.Spade
+  commentId: F:Blackjack_Class_Library.Suit.Spade
+  id: Spade
+  parent: Blackjack_Class_Library.Suit
+  langs:
+  - csharp
+  - vb
+  name: Spade
+  nameWithType: Suit.Spade
+  fullName: Blackjack_Class_Library.Suit.Spade
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Card.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Spade
+    path: Blackjack_Class_Library/Card.cs
+    startLine: 13
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Spade = 3
+    return:
+      type: Blackjack_Class_Library.Suit
+references:
+- uid: Blackjack_Class_Library
+  commentId: N:Blackjack_Class_Library
+  href: Blackjack_Class_Library.html
+  name: Blackjack_Class_Library
+  nameWithType: Blackjack_Class_Library
+  fullName: Blackjack_Class_Library
+- uid: Blackjack_Class_Library.Suit
+  commentId: T:Blackjack_Class_Library.Suit
+  parent: Blackjack_Class_Library
+  href: Blackjack_Class_Library.Suit.html
+  name: Suit
+  nameWithType: Suit
+  fullName: Blackjack_Class_Library.Suit

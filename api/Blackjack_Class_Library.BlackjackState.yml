@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: Blackjack_Class_Library.BlackjackState
+  commentId: T:Blackjack_Class_Library.BlackjackState
+  id: BlackjackState
+  parent: Blackjack_Class_Library
+  children:
+  - Blackjack_Class_Library.BlackjackState.DealerTurn
+  - Blackjack_Class_Library.BlackjackState.GameEnd
+  - Blackjack_Class_Library.BlackjackState.NoGame
+  - Blackjack_Class_Library.BlackjackState.PlayerTurn
+  langs:
+  - csharp
+  - vb
+  name: BlackjackState
+  nameWithType: BlackjackState
+  fullName: Blackjack_Class_Library.BlackjackState
+  type: Enum
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: BlackjackState
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 21
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public enum BlackjackState
+    content.vb: Public Enum BlackjackState
+- uid: Blackjack_Class_Library.BlackjackState.NoGame
+  commentId: F:Blackjack_Class_Library.BlackjackState.NoGame
+  id: NoGame
+  parent: Blackjack_Class_Library.BlackjackState
+  langs:
+  - csharp
+  - vb
+  name: NoGame
+  nameWithType: BlackjackState.NoGame
+  fullName: Blackjack_Class_Library.BlackjackState.NoGame
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: NoGame
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 23
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: NoGame = 0
+    return:
+      type: Blackjack_Class_Library.BlackjackState
+- uid: Blackjack_Class_Library.BlackjackState.PlayerTurn
+  commentId: F:Blackjack_Class_Library.BlackjackState.PlayerTurn
+  id: PlayerTurn
+  parent: Blackjack_Class_Library.BlackjackState
+  langs:
+  - csharp
+  - vb
+  name: PlayerTurn
+  nameWithType: BlackjackState.PlayerTurn
+  fullName: Blackjack_Class_Library.BlackjackState.PlayerTurn
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: PlayerTurn
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 24
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: PlayerTurn = 1
+    return:
+      type: Blackjack_Class_Library.BlackjackState
+- uid: Blackjack_Class_Library.BlackjackState.DealerTurn
+  commentId: F:Blackjack_Class_Library.BlackjackState.DealerTurn
+  id: DealerTurn
+  parent: Blackjack_Class_Library.BlackjackState
+  langs:
+  - csharp
+  - vb
+  name: DealerTurn
+  nameWithType: BlackjackState.DealerTurn
+  fullName: Blackjack_Class_Library.BlackjackState.DealerTurn
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DealerTurn
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 25
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: DealerTurn = 2
+    return:
+      type: Blackjack_Class_Library.BlackjackState
+- uid: Blackjack_Class_Library.BlackjackState.GameEnd
+  commentId: F:Blackjack_Class_Library.BlackjackState.GameEnd
+  id: GameEnd
+  parent: Blackjack_Class_Library.BlackjackState
+  langs:
+  - csharp
+  - vb
+  name: GameEnd
+  nameWithType: BlackjackState.GameEnd
+  fullName: Blackjack_Class_Library.BlackjackState.GameEnd
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: GameEnd
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 26
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: GameEnd = 3
+    return:
+      type: Blackjack_Class_Library.BlackjackState
+references:
+- uid: Blackjack_Class_Library
+  commentId: N:Blackjack_Class_Library
+  href: Blackjack_Class_Library.html
+  name: Blackjack_Class_Library
+  nameWithType: Blackjack_Class_Library
+  fullName: Blackjack_Class_Library
+- uid: Blackjack_Class_Library.BlackjackState
+  commentId: T:Blackjack_Class_Library.BlackjackState
+  parent: Blackjack_Class_Library
+  href: Blackjack_Class_Library.BlackjackState.html
+  name: BlackjackState
+  nameWithType: BlackjackState
+  fullName: Blackjack_Class_Library.BlackjackState

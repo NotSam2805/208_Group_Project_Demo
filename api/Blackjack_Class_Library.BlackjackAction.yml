@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Blackjack_Class_Library.BlackjackAction
+  commentId: T:Blackjack_Class_Library.BlackjackAction
+  id: BlackjackAction
+  parent: Blackjack_Class_Library
+  children:
+  - Blackjack_Class_Library.BlackjackAction.DoubleDown
+  - Blackjack_Class_Library.BlackjackAction.Hit
+  - Blackjack_Class_Library.BlackjackAction.Stand
+  langs:
+  - csharp
+  - vb
+  name: BlackjackAction
+  nameWithType: BlackjackAction
+  fullName: Blackjack_Class_Library.BlackjackAction
+  type: Enum
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: BlackjackAction
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 29
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: public enum BlackjackAction
+    content.vb: Public Enum BlackjackAction
+- uid: Blackjack_Class_Library.BlackjackAction.Hit
+  commentId: F:Blackjack_Class_Library.BlackjackAction.Hit
+  id: Hit
+  parent: Blackjack_Class_Library.BlackjackAction
+  langs:
+  - csharp
+  - vb
+  name: Hit
+  nameWithType: BlackjackAction.Hit
+  fullName: Blackjack_Class_Library.BlackjackAction.Hit
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Hit
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 31
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Hit = 0
+    return:
+      type: Blackjack_Class_Library.BlackjackAction
+- uid: Blackjack_Class_Library.BlackjackAction.Stand
+  commentId: F:Blackjack_Class_Library.BlackjackAction.Stand
+  id: Stand
+  parent: Blackjack_Class_Library.BlackjackAction
+  langs:
+  - csharp
+  - vb
+  name: Stand
+  nameWithType: BlackjackAction.Stand
+  fullName: Blackjack_Class_Library.BlackjackAction.Stand
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: Stand
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 32
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: Stand = 1
+    return:
+      type: Blackjack_Class_Library.BlackjackAction
+- uid: Blackjack_Class_Library.BlackjackAction.DoubleDown
+  commentId: F:Blackjack_Class_Library.BlackjackAction.DoubleDown
+  id: DoubleDown
+  parent: Blackjack_Class_Library.BlackjackAction
+  langs:
+  - csharp
+  - vb
+  name: DoubleDown
+  nameWithType: BlackjackAction.DoubleDown
+  fullName: Blackjack_Class_Library.BlackjackAction.DoubleDown
+  type: Field
+  source:
+    remote:
+      path: Blackjack_Class_Library/Blackjack.cs
+      branch: master
+      repo: https://github.com/NotSam2805/208_Group_Project_Demo.git
+    id: DoubleDown
+    path: Blackjack_Class_Library/Blackjack.cs
+    startLine: 33
+  assemblies:
+  - Blackjack_Class_Library
+  namespace: Blackjack_Class_Library
+  syntax:
+    content: DoubleDown = 2
+    return:
+      type: Blackjack_Class_Library.BlackjackAction
+references:
+- uid: Blackjack_Class_Library
+  commentId: N:Blackjack_Class_Library
+  href: Blackjack_Class_Library.html
+  name: Blackjack_Class_Library
+  nameWithType: Blackjack_Class_Library
+  fullName: Blackjack_Class_Library
+- uid: Blackjack_Class_Library.BlackjackAction
+  commentId: T:Blackjack_Class_Library.BlackjackAction
+  parent: Blackjack_Class_Library
+  href: Blackjack_Class_Library.BlackjackAction.html
+  name: BlackjackAction
+  nameWithType: BlackjackAction
+  fullName: Blackjack_Class_Library.BlackjackAction

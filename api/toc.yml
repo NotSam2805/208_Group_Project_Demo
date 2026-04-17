@@ -1,0 +1,34 @@
+### YamlMime:TableOfContent
+items:
+- uid: Blackjack_Class_Library
+  name: Blackjack_Class_Library
+  type: Namespace
+  items:
+  - uid: Blackjack_Class_Library.Blackjack
+    name: Blackjack
+    type: Class
+  - uid: Blackjack_Class_Library.BlackjackAction
+    name: BlackjackAction
+    type: Enum
+  - uid: Blackjack_Class_Library.BlackjackResult
+    name: BlackjackResult
+    type: Enum
+  - uid: Blackjack_Class_Library.BlackjackState
+    name: BlackjackState
+    type: Enum
+  - uid: Blackjack_Class_Library.Card
+    name: Card
+    type: Class
+  - uid: Blackjack_Class_Library.CardCounter
+    name: CardCounter
+    type: Class
+  - uid: Blackjack_Class_Library.FrontEnd
+    name: FrontEnd
+    type: Class
+  - uid: Blackjack_Class_Library.Rank
+    name: Rank
+    type: Enum
+  - uid: Blackjack_Class_Library.Suit
+    name: Suit
+    type: Enum
+memberLayout: SamePage
